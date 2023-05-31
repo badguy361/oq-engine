@@ -17,7 +17,7 @@ LABEL maintainer="GEM Foundation <devops@openquake.org>" \
        vendor="GEM Foundation"
 RUN useradd -m -u 1000 -s /bin/bash openquake
 RUN apt-get update &&  apt-get install -y --no-install-recommends build-essential gcc git libcap-dev
-ARG oq_branch
+ARG oq_branch=master
 
 # Create venv
 ENV VIRTUAL_ENV=/opt/openquake
