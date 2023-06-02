@@ -7,7 +7,7 @@ np.set_printoptions(threshold=sys.maxsize)
 pd.set_option('display.max_rows', None)
 
 # df = pd.read_csv("AbrahamsonEtAl2014(27)/hazard_map-mean_27.csv",skiprows=[0])
-df = pd.read_csv("Yu2023(19)/hazard_map-mean_19.csv",skiprows=[0])
+df = pd.read_csv("ScenarioCase1/Yu2023(19)/hazard_map-mean_19.csv",skiprows=[0])
 # df = pd.read_csv("result.csv",skiprows=[0])
 x = df["lon"]
 y = df["lat"]

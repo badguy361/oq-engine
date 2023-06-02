@@ -82,7 +82,11 @@ class Yu2023(GMPE):
         for spec of input and result values.
         """
         for m, imt in enumerate(imts):
+            print("------------------------------")
+            # print(imt)
             C = self.COEFFS[imt]
+            # print(C)
+
             # compute median sa on rock (vs30=1180m/s). Used for site response
             # term calculation
 
@@ -96,6 +100,14 @@ class Yu2023(GMPE):
             # fre = _get_regional_term(self.region, C, imt, ctx.vs30, ctx.rrup)
 
             # get the mean value
+            if m==0:
+                print(m)
+                print("mean",mean)
+                print("len",len(mean[0]))
+                print("sig",sig)
+                print("tau",tau)
+                print("phi",phi)
+
             mean[m] = 1
 
             mean[m] += 2
