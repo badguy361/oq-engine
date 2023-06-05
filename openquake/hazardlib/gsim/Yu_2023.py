@@ -28,7 +28,9 @@ import numpy as np
 from scipy import interpolate
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable, add_alias
 from openquake.hazardlib import const
+import pickle
 from openquake.hazardlib.imt import PGA, PGV, SA
+
 
 class Yu2023(GMPE):
     """
@@ -83,8 +85,11 @@ class Yu2023(GMPE):
         """
         for m, imt in enumerate(imts):
             print("------------------------------")
+            # print(ctx)
+            ML_model = pickle.load(open(f'E:\Yu\oq-engine\openquake\hazardlib\gsim\XGB_PGA.pkl', 'rb'))
+
             # print(imt)
-            C = self.COEFFS[imt]
+            # C = self.COEFFS[imt]
             # print(C)
 
             # compute median sa on rock (vs30=1180m/s). Used for site response
@@ -100,17 +105,20 @@ class Yu2023(GMPE):
             # fre = _get_regional_term(self.region, C, imt, ctx.vs30, ctx.rrup)
 
             # get the mean value
-            if m==0:
-                print(m)
-                print("mean",mean)
-                print("len",len(mean[0]))
-                print("sig",sig)
-                print("tau",tau)
-                print("phi",phi)
+            # if m==0:
+            #     print(m)
+            #     print("mean",mean)
+            #     print("len",len(mean[0]))
+            #     print("sig",sig)
+            #     print("tau",tau)
+            #     print("phi",phi)
+            
+            # print(ctx.vs30)
+            # print(ctx.rrup)
+            mean[m] = ML_model.predict([[np.log(ctx.vs30)[0], 7,np.log(ctx.rrup)[0],1,120]])[0]
+            # mean[m] = ML_model.predict([[np.log(760), 7,4.6,1,120]])[0]
 
-            mean[m] = 1
-
-            mean[m] += 2
+            # mean[m] += 2
 
             # get standard deviations
             sig[m], tau[m], phi[m] = 3,5,4
