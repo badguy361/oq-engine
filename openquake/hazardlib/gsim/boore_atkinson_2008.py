@@ -148,9 +148,7 @@ class BooreAtkinson2008(GMPE):
                 mean[m] = np.log(np.exp(mean[m]) * f_ena)
 
             set_sig(self.kind, C, sig[m], tau[m], phi[m])
-            print("sig:",sig)
-            print("tau:",tau)
-            print("phi:",phi)
+        print("mean:",mean)
 
     #: Coefficient table is constructed from values in tables 6, 7 and 8
     #: (pages 119, 120, 121). Spectral acceleration is defined for damping

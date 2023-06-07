@@ -3,7 +3,7 @@
       xmlns="http://openquake.org/xmlns/nrml/0.4">
     <simpleFaultRupture>
         <magnitude>7.0</magnitude>
-        <rake>90.0</rake>
+        <rake>-45.0</rake>
         <hypocenter lat="0.0" lon="0.0" depth="10.0"/>
         <simpleFaultGeometry>
             <gml:LineString>

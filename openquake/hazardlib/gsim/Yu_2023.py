@@ -84,16 +84,11 @@ class Yu2023(GMPE):
         for spec of input and result values.
         """
         for m, imt in enumerate(imts):
-            print("------------------------------")
-            # print(ctx)
             ML_model = pickle.load(open(f'E:\Yu\oq-engine\openquake\hazardlib\gsim\XGB_PGA.pkl', 'rb'))
-            # compute median sa on rock (vs30=1180m/s). Used for site response
-            # term calculation
-            
-            predict = ML_model.predict([[np.log(ctx.vs30)[m], ctx.mag[m],np.log(ctx.rrup)[m],ctx.rake[m],120]])[0]
-            # get the mean value
-            # print("predict:",predict)
-            mean[m] = np.exp(predict)/980
-            # get standard deviations
-            sig[m], tau[m], phi[m] = 0.35,0.12,0.34
+            for i in range(len(ctx)):
+                print("rake",ctx.rake[i])
+                predict = ML_model.predict([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],120]])[0]
+                # print("predict:",predict)
+                mean[m][i] = np.log(np.exp(predict)/980)
+                sig[m][i], tau[m][i], phi[m][i] = 0.35,0.12,0.34
         print("mean:",mean)
