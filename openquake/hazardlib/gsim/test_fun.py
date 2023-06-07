@@ -31,7 +31,6 @@ from openquake.hazardlib.gsim.base import GMPE, CoeffsTable, add_alias
 from openquake.hazardlib import const
 from openquake.hazardlib.imt import PGA, PGV, SA
 class uuu(GMPE):
-    print("inin")
     """
     Implements GMPE by Abrahamson, Silva and Kamai developed within the
     the PEER West 2 Project. This GMPE is described in a paper
@@ -83,10 +82,7 @@ class uuu(GMPE):
         for spec of input and result values.
         """
         for m, imt in enumerate(imts):
-            print(imt)
-            print(m)
             C = self.COEFFS[imt]
-            print(C)
             # compute median sa on rock (vs30=1180m/s). Used for site response
             # term calculation
 
