@@ -87,7 +87,7 @@ class Yu2023(GMPE):
             ML_model = pickle.load(open(f'E:\Yu\oq-engine\openquake\hazardlib\gsim\XGB_PGA.pkl', 'rb'))
             for i in range(len(ctx)):
                 print("rake",ctx.rake[i])
-                predict = ML_model.predict([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],120]])[0]
+                predict = ML_model.predict([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],256]])[0]
                 # print("predict:",predict)
                 mean[m][i] = np.log(np.exp(predict)/980)
                 sig[m][i], tau[m][i], phi[m][i] = 0.35,0.12,0.34
