@@ -16,12 +16,6 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with OpenQuake. If not, see <http://www.gnu.org/licenses/>.
 
-"""
-Module exports :class:`AbrahamsonEtAl2014`
-               :class:`AbrahamsonEtAl2014RegCHN`
-               :class:`AbrahamsonEtAl2014RegJPN`
-               :class:`AbrahamsonEtAl2014RegTWN`
-"""
 import copy
 import numpy as np
 
@@ -33,13 +27,6 @@ from openquake.hazardlib.imt import PGA, PGV, SA
 
 
 class Yu2023(GMPE):
-    """
-    Implements GMPE by Abrahamson, Silva and Kamai developed within the
-    the PEER West 2 Project. This GMPE is described in a paper
-    published in 2014 on Earthquake Spectra, Volume 30, Number 3 and
-    titled 'Summary of the ASK14 Ground Motion Relation for Active Crustal
-    Regions'.
-    """
     #: Supported tectonic region type is active shallow crust, see title!
     DEFINED_FOR_TECTONIC_REGION_TYPE = const.TRT.ACTIVE_SHALLOW_CRUST
 
@@ -78,17 +65,9 @@ class Yu2023(GMPE):
         super().__init__(**kwargs)
 
     def compute(self, ctx: np.recarray, imts, mean, sig, tau, phi):
-        """
-        See :meth:`superclass method
-        <.base.GroundShakingIntensityModel.compute>`
-        for spec of input and result values.
-        """
         for m, imt in enumerate(imts):
             ML_model = pickle.load(open(f'E:\Yu\oq-engine\openquake\hazardlib\gsim\XGB_PGA.pkl', 'rb'))
             for i in range(len(ctx)):
-                print("rake",ctx.rake[i])
                 predict = ML_model.predict([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],256]])[0]
-                # print("predict:",predict)
                 mean[m][i] = np.log(np.exp(predict)/980)
                 sig[m][i], tau[m][i], phi[m][i] = 0.35,0.12,0.34
-        print("mean:",mean)
