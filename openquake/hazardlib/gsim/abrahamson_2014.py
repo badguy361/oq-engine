@@ -479,7 +479,6 @@ class AbrahamsonEtAl2014(GMPE):
             # get standard deviations
             sig[m], tau[m], phi[m] = _get_stddevs(
                 self.region, C, imt, ctx, sa1180)
-        print("mean:",mean)
     #: Coefficient tables as per annex B of Abrahamson et al. (2014)
     COEFFS = CoeffsTable(sa_damping=5, table="""\
 IMT     m1      vlin    b       c       c4      a1      a2      a3      a4      a5      a6      a7   a8      a10     a11     a12     a13     a14     a15     a17     a43     a44     a45     a46     a25     a28     a29     a31     a36     a37     a38     a39     a40     a41     a42     s1e     s2e     s3      s4      s1m     s2m     s5      s6

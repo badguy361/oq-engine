@@ -24,9 +24,11 @@ from openquake.hazardlib.gsim.base import GMPE, CoeffsTable, add_alias
 from openquake.hazardlib import const
 import pickle
 from openquake.hazardlib.imt import PGA, PGV, SA
-
+import xgboost as xgb
 
 class Yu2023(GMPE):
+    import warnings
+    warnings.filterwarnings('ignore')
     #: Supported tectonic region type is active shallow crust, see title!
     DEFINED_FOR_TECTONIC_REGION_TYPE = const.TRT.ACTIVE_SHALLOW_CRUST
 
@@ -65,9 +67,11 @@ class Yu2023(GMPE):
         super().__init__(**kwargs)
 
     def compute(self, ctx: np.recarray, imts, mean, sig, tau, phi):
+        ML_model = xgb.Booster()
+        ML_model.load_model(f'E:\Yu\oq-engine\openquake\hazardlib\gsim\XGB_PGA.json')
         for m, imt in enumerate(imts):
-            ML_model = pickle.load(open(f'E:\Yu\oq-engine\openquake\hazardlib\gsim\XGB_PGA.pkl', 'rb'))
             for i in range(len(ctx)):
-                predict = ML_model.predict([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],256]])[0]
+                predict = ML_model.predict(xgb.DMatrix([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],256]]))[0]
                 mean[m][i] = np.log(np.exp(predict)/980)
                 sig[m][i], tau[m][i], phi[m][i] = 0.35,0.12,0.34
+        print('endQQQQQQQQQQQQQQQQ')

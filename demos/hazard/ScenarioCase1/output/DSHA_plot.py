@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp2d,griddata
 
-id = 88
+id = 116
 folder = 'Yu2023'
 df_site = pd.read_csv(f"{folder}({id})/sitemesh_{id}.csv",skiprows=[0])
 df_gmf = pd.read_csv(f"{folder}({id})/gmf-data_{id}.csv",skiprows=[0])
