@@ -68,10 +68,16 @@ class Yu2023(GMPE):
 
     def compute(self, ctx: np.recarray, imts, mean, sig, tau, phi):
         ML_model = xgb.Booster()
-        ML_model.load_model(f'E:\Yu\oq-engine\openquake\hazardlib\gsim\XGB_PGA.json')
+        ML_model.load_model(f'/usr/src/oq-engine/openquake/hazardlib/gsim/XGB_PGA.json')
+        sta_id = [256]*len(ctx)
         for m, imt in enumerate(imts):
-            for i in range(len(ctx)):
-                predict = ML_model.predict(xgb.DMatrix([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],256]]))[0]
-                mean[m][i] = np.log(np.exp(predict)/980)
-                sig[m][i], tau[m][i], phi[m][i] = 0.35,0.12,0.34
+            # print(ctx.vs30)
+            # predict = ML_model.predict(xgb.DMatrix([[np.log(ctx.vs30), ctx.mag,np.log(ctx.rrup),ctx.rake,256]]))[0]
+            # print(predict)
+            predict = ML_model.predict(xgb.DMatrix(np.column_stack((np.log(ctx.vs30), ctx.mag, np.log(ctx.rrup), ctx.rake, sta_id))))
+            mean[m] = np.log(np.exp(predict)/980)
+            # for i in range(len(ctx)):
+            #     predict = ML_model.predict(xgb.DMatrix([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],256]]))[0]
+            #     mean[m][i] = np.log(np.exp(predict)/980)
+            sig[m], tau[m], phi[m] = 0.35,0.12,0.34
         print('endQQQQQQQQQQQQQQQQ')
