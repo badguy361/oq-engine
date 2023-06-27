@@ -44,4 +44,4 @@ RUN mkdir oqdata
 ADD scripts/oq-start.sh ${HOME}
 EXPOSE 8800:8800
 STOPSIGNAL SIGINT
-ENTRYPOINT ["/bin/bash"]  
+CMD ["/bin/bash"]

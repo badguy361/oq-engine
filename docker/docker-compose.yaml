@@ -1,0 +1,16 @@
+version: '3'
+services:
+  oq:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: openquake_dev
+    container_name: openquake_dev
+    restart: on-failure
+    ports:
+      - 8800:8800
+    volumes:
+      - E:\Yu\oq-engine\demos\hazard:/usr/src/oq-engine/demos/hazard
+      - E:\Yu\oq-engine\openquake\hazardlib\gsim:/usr/src/oq-engine/openquake/hazardlib/gsim
+    stdin_open: true
+    tty: true
