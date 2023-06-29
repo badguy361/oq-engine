@@ -34,10 +34,9 @@ fault_data = [
     121.7586, 25.3200
 ]
 
-#'AbrahamsonEtAl2014','Yu2023','Lin2009','BooreAtkinson2008','Allen2022'
-
-id = 19
-folder = 'BooreAtkinson2008'
+#'AbrahamsonEtAl2014','Yu2023','Lin2009','BooreAtkinson2008','Allen2022','Chang2023'
+id = 15
+folder = 'Yu2023'
 df_site = pd.read_csv(f"{folder}({id})/sitemesh_{id}.csv", skiprows=[0])
 df_gmf = pd.read_csv(f"{folder}({id})/gmf-data_{id}.csv", skiprows=[0])
 df_total = df_gmf.merge(df_site, how='left', on='site_id')
@@ -52,9 +51,10 @@ region = [119.5, 122.5, 21.5, 25.5]
 fig.basemap(region=region,
             projection="M12c",
             frame=["af", f"WSne+tScenario Hazard Analysis gmm type: {folder}"])
-fig.coast(land="gray", water="dodgerblue4", shorelines="1p,black")
-pygmt.makecpt(cmap="inferno", series=(0, 1.5))
+fig.coast(land="gray", water="gray", shorelines="1p,black")
+pygmt.makecpt(cmap="turbo", series=(0, 1.5))
 fig.plot(x=fault_data[::2], y=fault_data[1::2],pen="thick,red")
 fig.plot(x=x, y=y, style="c0.2c", cmap=True, color=gmv_PGA)
 fig.colorbar(frame=["x+lPGA(g)"])
+fig.savefig(f"{folder}({id})/gmv_PGA.png",dpi=300)
 fig.show()

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # vim: tabstop=4 shiftwidth=4 softtabstop=4
 #
-# Copyright (C) 2014-2023 GEM Foundation
+# Copyright (C) 2014-2023 GEM Foundation, Chih-Yu Chang
 #
 # OpenQuake is free software: you can redistribute it and/or modify it
 # under the terms of the GNU Affero General Public License as published
@@ -18,7 +18,7 @@
 
 import copy
 import numpy as np
-
+import pandas as pd
 from scipy import interpolate
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable, add_alias
 from openquake.hazardlib import const
@@ -26,7 +26,7 @@ import pickle
 from openquake.hazardlib.imt import PGA, PGV, SA
 import xgboost as xgb
 
-class Yu2023(GMPE):
+class Chang2023(GMPE):
     import warnings
     warnings.filterwarnings('ignore')
     #: Supported tectonic region type is active shallow crust, see title!
@@ -65,19 +65,22 @@ class Yu2023(GMPE):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-
-    def compute(self, ctx: np.recarray, imts, mean, sig, tau, phi):
         ML_model = xgb.Booster()
         ML_model.load_model(f'/usr/src/oq-engine/openquake/hazardlib/gsim/XGB_PGA.json')
-        sta_id = [256]*len(ctx)
+        self.ML_model = ML_model
+        Sta_ID_thread = pd.read_csv(f"/usr/src/oq-engine/openquake/hazardlib/gsim/Sta_ID_info.csv")
+        self.Sta_ID_thread = Sta_ID_thread
+
+    def compute(self, ctx: np.recarray, imts, mean, sig, tau, phi):
+        point = [119.5635611,21.90093889] # standard
         for m, imt in enumerate(imts):
-            # print(ctx.vs30)
-            # predict = ML_model.predict(xgb.DMatrix([[np.log(ctx.vs30), ctx.mag,np.log(ctx.rrup),ctx.rake,256]]))[0]
-            # print(predict)
-            predict = ML_model.predict(xgb.DMatrix(np.column_stack((np.log(ctx.vs30), ctx.mag, np.log(ctx.rrup), ctx.rake, sta_id))))
+            # cal sta_id by distance
+            sta_dist = self.Sta_ID_thread['STA_DIST'].values.tolist()
+            new_number = ((((ctx.lat-point[1])*110)**2 + ((ctx.lon-point[0])*101)**2)**(1/2))
+            sta_id = np.searchsorted(sta_dist, new_number)
+
+            predict = self.ML_model.predict(xgb.DMatrix(np.column_stack((np.log(ctx.vs30), ctx.mag, np.log(ctx.rrup), ctx.rake, sta_id))))
             mean[m] = np.log(np.exp(predict)/980)
-            # for i in range(len(ctx)):
-            #     predict = ML_model.predict(xgb.DMatrix([[np.log(ctx.vs30[i]), ctx.mag[i],np.log(ctx.rrup[i]),ctx.rake[i],256]]))[0]
-            #     mean[m][i] = np.log(np.exp(predict)/980)
             sig[m], tau[m], phi[m] = 0.35,0.12,0.34
-        print('endQQQQQQQQQQQQQQQQ')
+        print('----------end----------')
+        
