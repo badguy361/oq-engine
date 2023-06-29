@@ -79,8 +79,8 @@
                 </gml:LineString>
             </faultBottomEdge>
         </complexFaultGeometry>
-        <magnitude>7.01</magnitude>
-        <rake>90.0</rake>
+        <magnitude>7.27</magnitude>
+        <rake>-90.0</rake>
         <upperSeismoDepth>1.0</upperSeismoDepth>
         <lowerSeismoDepth>13.0</lowerSeismoDepth>
         <dip>50.0</dip>

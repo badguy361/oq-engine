@@ -35,8 +35,8 @@ fault_data = [
 ]
 
 #'AbrahamsonEtAl2014','Yu2023','Lin2009','BooreAtkinson2008','Allen2022','Chang2023'
-id = 32
-folder = 'Chang2023'
+id = 40
+folder = 'AbrahamsonEtAl2014'
 df_site = pd.read_csv(f"{folder}({id})/sitemesh_{id}.csv", skiprows=[0])
 df_gmf = pd.read_csv(f"{folder}({id})/gmf-data_{id}.csv", skiprows=[0])
 df_total = df_gmf.merge(df_site, how='left', on='site_id')
