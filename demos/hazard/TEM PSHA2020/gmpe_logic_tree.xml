@@ -7,7 +7,7 @@
                     applyToTectonicRegionType="Active Shallow Crust">
 
                 <logicTreeBranch branchID="b4">
-                    <uncertaintyModel>Yu2023</uncertaintyModel>
+                    <uncertaintyModel>PhungEtAl2020Asc</uncertaintyModel>
                     <uncertaintyWeight>1.0</uncertaintyWeight>
                 </logicTreeBranch>
 

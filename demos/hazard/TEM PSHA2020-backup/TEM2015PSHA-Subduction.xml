@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml" xmlns="http://openquake.org/xmlns/nrml/0.4">
+  <sourceModel name="Subduction">
+    <simpleFaultSource id="T01" name="T01" tectonicRegion="Interface subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList>123.007461 23.482509 122.565837	23.511029 122.00233 23.698985 121.824173 23.941333 </gml:posList>
+        </gml:LineString>
+        <dip>20.000</dip>
+        <upperSeismoDepth>10.000</upperSeismoDepth>
+        <lowerSeismoDepth>45.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <incrementalMFD minMag="8.00" binWidth="0.10">
+        <occurRates> 0.013528033 </occurRates>
+      </incrementalMFD>
+      <rake>90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="T02A" name="T02A" tectonicRegion="Interface subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList>120.204213 22.284911 120.204148 22.999638 </gml:posList>
+        </gml:LineString>
+        <dip>24.000</dip>
+        <upperSeismoDepth>13.000</upperSeismoDepth>
+        <lowerSeismoDepth>35.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <incrementalMFD minMag="7.50" binWidth="0.10">
+        <occurRates>  0.004587844 </occurRates>
+      </incrementalMFD>
+      <rake>90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="T02B" name="T02B" tectonicRegion="Interface subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList>120.349341 21.675517 120.204213 22.284911 </gml:posList>
+        </gml:LineString>
+        <dip>24.000</dip>
+        <upperSeismoDepth>13.000</upperSeismoDepth>
+        <lowerSeismoDepth>35.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <incrementalMFD minMag="7.50" binWidth="0.10">
+        <occurRates>  0.004004777 </occurRates>
+      </incrementalMFD>
+      <rake>90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="T02C" name="T02C" tectonicRegion="Interface subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList>120.665 21.000593 120.349341 21.675517 </gml:posList>
+        </gml:LineString>
+        <dip>24.000</dip>
+        <upperSeismoDepth>13.000</upperSeismoDepth>
+        <lowerSeismoDepth>35.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <incrementalMFD minMag="7.50" binWidth="0.10">
+        <occurRates>  0.004720991 </occurRates>
+      </incrementalMFD>
+      <rake>90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP1" name="NP1" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  23.996 122.226  24.250 121.901  24.497 121.587  24.375 </gml:posList>
+        </gml:LineString>
+        <dip>30.000</dip>
+        <upperSeismoDepth> 35.000</upperSeismoDepth>
+        <lowerSeismoDepth> 50.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 4.204" bValue="0.908" minMag="5.0" maxMag="7.7"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP2" name="NP2" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  24.479 122.796  24.524 122.437  24.618 122.308  24.647 122.110  24.685 122.005  24.698 121.480  24.716 </gml:posList>
+        </gml:LineString>
+        <dip>40.000</dip>
+        <upperSeismoDepth> 50.000</upperSeismoDepth>
+        <lowerSeismoDepth> 70.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.572" bValue="0.801" minMag="5.0" maxMag="7.7"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP3" name="NP3" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  24.641 122.719  24.704 122.384  24.793 122.230  24.824 122.041  24.856 121.856  24.881 121.480  24.909 </gml:posList>
+        </gml:LineString>
+        <dip>50.000</dip>
+        <upperSeismoDepth> 70.000</upperSeismoDepth>
+        <lowerSeismoDepth> 90.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.542" bValue="0.866" minMag="5.0" maxMag="7.7"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP4" name="NP4" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  24.747 122.785  24.801 122.457  24.873 122.181  24.918 122.047  24.945 121.829  24.982 121.480  25.032 </gml:posList>
+        </gml:LineString>
+        <dip>60.000</dip>
+        <upperSeismoDepth> 90.000</upperSeismoDepth>
+        <lowerSeismoDepth>110.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 2.683" bValue="0.730" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP5" name="NP5" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  24.838 122.596  24.926 122.383  24.957 122.135  24.998 121.924  25.035 121.818  25.058 121.480  25.113 </gml:posList>
+        </gml:LineString>
+        <dip>70.000</dip>
+        <upperSeismoDepth>110.000</upperSeismoDepth>
+        <lowerSeismoDepth>130.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.074" bValue="0.938" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP6" name="NP6" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  24.936 122.888  24.953 122.797  24.963 122.670  24.983 122.513  25.012 121.994  25.088 121.876  25.111 121.679  25.158 121.480  25.210 </gml:posList>
+        </gml:LineString>
+        <dip>70.000</dip>
+        <upperSeismoDepth>130.000</upperSeismoDepth>
+        <lowerSeismoDepth>150.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.256" bValue="0.959" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP7" name="NP7" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  25.050 122.874  25.059 122.626  25.084 122.256  25.126 122.161  25.142 121.918  25.190 121.686  25.251 121.524  25.299 121.480  25.307 </gml:posList>
+        </gml:LineString>
+        <dip>70.000</dip>
+        <upperSeismoDepth>150.000</upperSeismoDepth>
+        <lowerSeismoDepth>170.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 2.457" bValue="0.730" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP8" name="NP8" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  25.141 122.717  25.157 122.629  25.165 122.298  25.207 122.086  25.249 121.480  25.407 </gml:posList>
+        </gml:LineString>
+        <dip>70.000</dip>
+        <upperSeismoDepth>170.000</upperSeismoDepth>
+        <lowerSeismoDepth>190.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.733" bValue="1.040" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="NP9" name="NP9" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 123.000  25.241 122.640  25.261 122.467  25.276 122.327  25.293 122.116  25.326 121.701  25.429 121.480  25.505 </gml:posList>
+        </gml:LineString>
+        <dip>70.000</dip>
+        <upperSeismoDepth>190.000</upperSeismoDepth>
+        <lowerSeismoDepth>210.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.612" bValue="0.913" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="SP1" name="SP1" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 121.023  21.001 120.578  23.001 </gml:posList>
+        </gml:LineString>
+        <dip>35.000</dip>
+        <upperSeismoDepth> 35.000</upperSeismoDepth>
+        <lowerSeismoDepth> 50.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.065" bValue="0.762" minMag="5.0" maxMag="7.7"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="SP2" name="SP2" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 121.462  21.001 121.088  22.999 </gml:posList>
+        </gml:LineString>
+        <dip>55.000</dip>
+        <upperSeismoDepth> 50.000</upperSeismoDepth>
+        <lowerSeismoDepth>100.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.761" bValue="0.831" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>
+    <simpleFaultSource id="SP3" name="SP3" tectonicRegion="Intraslab subduction zone">
+      <simpleFaultGeometry>
+        <gml:LineString>
+          <gml:posList> 121.883  20.997 121.568  22.999 </gml:posList>
+        </gml:LineString>
+        <dip>70.000</dip>
+        <upperSeismoDepth>100.000</upperSeismoDepth>
+        <lowerSeismoDepth>180.000</lowerSeismoDepth>
+      </simpleFaultGeometry>
+      <magScaleRel>WC1994</magScaleRel>
+      <ruptAspectRatio>2.00</ruptAspectRatio>
+      <truncGutenbergRichterMFD aValue=" 3.724" bValue="0.876" minMag="5.0" maxMag="7.8"/>
+      <rake> 90.00</rake>
+    </simpleFaultSource>    
+  </sourceModel>
+</nrml>

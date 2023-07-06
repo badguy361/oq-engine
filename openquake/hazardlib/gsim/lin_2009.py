@@ -110,6 +110,8 @@ class Lin2009(GMPE):
         <.base.GroundShakingIntensityModel.compute>`
         for spec of input and result values.
         """
+        print(ctx)
+        print(ctx.dtype)
         for m, imt in enumerate(imts):
             C = self.COEFFS[imt]
             mean[m] = (
@@ -118,7 +120,7 @@ class Lin2009(GMPE):
                 _get_style_of_faulting_term(C, ctx.rake) +
                 _get_site_response_term(C, ctx.vs30))
             sig[m] = C['sigma']
-
+        print(mean)
     #: Coefficient table for rock sites, see table 3 page 227.
     COEFFS = CoeffsTable(sa_damping=5.0, table="""\
     IMT       C1      C2       C3       C4      C5       H       C6      C7       C8  sigma

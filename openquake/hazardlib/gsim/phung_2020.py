@@ -26,7 +26,8 @@ import numpy as np
 from openquake.hazardlib import const
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable
 from openquake.hazardlib.imt import PGA, SA
-
+from numpy.lib import recfunctions
+import threading
 
 def get_stddevs(C):
     """
@@ -135,7 +136,7 @@ class PhungEtAl2020Asc(GMPE):
         super().__init__(region=region, aftershocks=aftershocks, d_dpp=d_dpp,
                          **kwargs)
 
-        # region options:
+        # regions options:
         # 'glb', 'tw', 'ca', 'jp' (global, Taiwan, California, Japan)
         self.region = region
         # only for Taiwan region
@@ -152,7 +153,6 @@ class PhungEtAl2020Asc(GMPE):
         s = self.CONSTANTS
         for m, imt in enumerate(imts):
             C = self.COEFFS[imt]
-
             lnmed, ztor = _fsof_ztor(C, ctx.mag, ctx.rake, ctx.ztor)
             # main shock [1]
             lnmed += C['c1']
@@ -188,6 +188,15 @@ class PhungEtAl2020Asc(GMPE):
             lnmed += _basin_term(self.region, C, ctx.vs30, ctx.z1pt0)
             mean[m] = lnmed
             sig[m], tau[m], phi[m] = get_stddevs(C)
+
+        thread_id = threading.get_ident()
+        print('thread_id',thread_id)
+        ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])
+        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))
+        header = ','.join(ctx_tmp.dtype.names)
+        # print('header',header)
+        # print('ctx',ctx_tmp)
+        np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/PhungEtAl2020Asc_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
 
     COEFFS = CoeffsTable(sa_damping=5, table="""\
      imt    c1     c1_a         c1_b        c1_c         c1_d        c3     c5     c6      c7           c7_b        c8     c8_b   c9     c9_a   c9_b    c11         c11_b        c12         c12_b        c_n         c_m      c_g2        c_g3        c_hm    dp           phi2    phi3     phi4      c_g1tw     phi1tw       dc_g1as      c_g1ca       phi1ca      c_g1jp        phi1jp       c_g1glb      phi1glb     phi5tw  phi5ca      phi5jp      tau         phiss  phis2s
@@ -341,7 +350,7 @@ class PhungEtAl2020SInter(GMPE):
     def __init__(self, region='jptw', **kwargs):
         super().__init__(region=region, **kwargs)
 
-        # region options:
+        # regions options:
         # 'jptw', 'tw' (Japan/Taiwan joined, Taiwan)
         self.region = region
 
@@ -375,7 +384,7 @@ class PhungEtAl2020SInter(GMPE):
             # median total and stddev
             mean[m] = f_mag + f_p + f_ztor + f_site + f_z1pt0
             sig[m], tau[m], phi[m] = _get_stddevs(self.region, C)
-
+        
     COEFFS = CoeffsTable(sa_damping=5, table="""\
     imt   a1      a1_del       a2          a4           a4_del      a5          a6jptw       a6tw         a7           a8jptw  a8tw    a10         a11          a12jptw a12tw   a13        a14          b     mref vlin   tau4jptw    phiss4jptw  phis2s4jptw tau4tw      phiss4tw phis2s4tw
     PGA   4.4234  1.141899742 -1.552846733 0.441987425  0.328613796 0.03849929 -0.006794362 -0.000639314  0.681875399 -0.0075 -0.06276 0.016025291 0.014951807  0.8725  0.9321 -0.0256568 -0.011876681 -1.186 7.68  865.1 0.426469333 0.420489356 0.364038777 0.352252822 0.4130   0.3443

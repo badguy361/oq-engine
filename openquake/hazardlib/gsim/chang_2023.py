@@ -82,5 +82,5 @@ class Chang2023(GMPE):
             predict = self.ML_model.predict(xgb.DMatrix(np.column_stack((np.log(ctx.vs30), ctx.mag, np.log(ctx.rrup), ctx.rake, sta_id))))
             mean[m] = np.log(np.exp(predict)/980)
             sig[m], tau[m], phi[m] = 0.35,0.12,0.34
-        print('----------end----------')
+        print(mean)
         

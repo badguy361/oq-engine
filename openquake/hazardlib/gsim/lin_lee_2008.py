@@ -105,7 +105,7 @@ class LinLee2008SInter(GMPE):
                 if (self.DEFINED_FOR_TECTONIC_REGION_TYPE ==
                         const.TRT.SUBDUCTION_INTRASLAB):  # in subclass
                     mean[m, idx_soil] += 0.31
-
+        print(mean)
     #: Coefficient table for rock ctx, see table 3 page 227.
     COEFFS_ROCK = CoeffsTable(sa_damping=5, table="""\
     IMT      C1       C2        C3         C4         C5         C6        C7        sigma
