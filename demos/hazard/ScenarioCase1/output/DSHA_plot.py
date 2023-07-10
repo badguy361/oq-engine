@@ -3,8 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp2d,griddata
 
-id = 116
-folder = 'Yu2023'
+id = 84
+folder = 'ChaoEtAl2020Asc'
 df_site = pd.read_csv(f"{folder}({id})/sitemesh_{id}.csv",skiprows=[0])
 df_gmf = pd.read_csv(f"{folder}({id})/gmf-data_{id}.csv",skiprows=[0])
 x = df_site["lon"]
@@ -13,6 +13,7 @@ site_id = df_site["site_id"]
 
 gmv_PGA = df_gmf[df_gmf["event_id"]==0]["gmv_PGA"]
 
+plt.figure()
 plt.scatter(x, y, c=gmv_PGA, cmap='cool')
 plt.plot((0.0,0.0),(-0.3,0.3),c="r")
 plt.colorbar(label='PGA(g)')

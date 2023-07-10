@@ -190,12 +190,9 @@ class PhungEtAl2020Asc(GMPE):
             sig[m], tau[m], phi[m] = get_stddevs(C)
 
         thread_id = threading.get_ident()
-        print('thread_id',thread_id)
         ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])
         ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))
         header = ','.join(ctx_tmp.dtype.names)
-        # print('header',header)
-        # print('ctx',ctx_tmp)
         np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/PhungEtAl2020Asc_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
 
     COEFFS = CoeffsTable(sa_damping=5, table="""\

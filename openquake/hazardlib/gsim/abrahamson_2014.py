@@ -440,7 +440,8 @@ class AbrahamsonEtAl2014(GMPE):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.region = kwargs.get('region')
+        self.region = 'TWN'
+        print(self.region)
         assert self.region in (None, 'CHN', 'JPN', 'TWN'), region
 
     def compute(self, ctx: np.recarray, imts, mean, sig, tau, phi):

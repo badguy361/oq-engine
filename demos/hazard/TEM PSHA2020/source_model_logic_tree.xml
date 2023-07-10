@@ -7,7 +7,7 @@
                                 branchSetID="bs1">
                 <logicTreeBranch branchID="b1">
                     <uncertaintyModel>
-                        source_TEM2020-area.xml
+                        <!-- source_TEM2020-area.xml -->
                         source_TEM2020-fault.xml       
                         <!-- TEM2015PSHA-Subduction.xml                            -->
                     </uncertaintyModel>

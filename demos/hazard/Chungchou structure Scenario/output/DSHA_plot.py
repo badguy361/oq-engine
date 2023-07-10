@@ -26,15 +26,16 @@ fault_data = [
 ]
 
 #'AbrahamsonEtAl2014','Lin2009','Chang2023'
-id = 34
+id = 97
 folder = 'AbrahamsonEtAl2014'
-df_site = pd.read_csv(f"{folder}({id})/sitemesh_{id}.csv", skiprows=[0])
-df_gmf = pd.read_csv(f"{folder}({id})/gmf-data_{id}.csv", skiprows=[0])
+df_site = pd.read_csv(f"100result/{folder}({id})/sitemesh_{id}.csv", skiprows=[0])
+df_gmf = pd.read_csv(f"100result/{folder}({id})/gmf-data_{id}.csv", skiprows=[0])
 df_total = df_gmf.merge(df_site, how='left', on='site_id')
+df_total = df_total.groupby("site_id").mean()
 
-gmv_PGA = df_total[df_total["event_id"] == 2]["gmv_PGA"]
-x = df_total[df_total["event_id"] == 2]["lon"]
-y = df_total[df_total["event_id"] == 2]["lat"]
+gmv_PGA = df_total["gmv_PGA"]
+x = df_total["lon"]
+y = df_total["lat"]
 
 fig = pygmt.Figure()
 region = [119.5, 122.5, 21.5, 25.5]
@@ -47,5 +48,5 @@ pygmt.makecpt(cmap="turbo", series=(0, 1.5))
 fig.plot(x=fault_data[::2], y=fault_data[1::2], pen="thick,red")
 fig.plot(x=x, y=y, style="c0.2c", cmap=True, color=gmv_PGA)
 fig.colorbar(frame=["x+lPGA(g)"])
-fig.savefig(f"{folder}({id})/gmv_PGA.png", dpi=300)
+fig.savefig(f"100result/{folder}({id})/gmv_PGA.png", dpi=300)
 fig.show()
