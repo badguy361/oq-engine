@@ -24,7 +24,8 @@ import numpy as np
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable
 from openquake.hazardlib import const
 from openquake.hazardlib.imt import PGA, SA
-
+from numpy.lib import recfunctions
+import threading
 
 def _get_distance_term(C, mag, rrup):
     """
@@ -110,8 +111,6 @@ class Lin2009(GMPE):
         <.base.GroundShakingIntensityModel.compute>`
         for spec of input and result values.
         """
-        print(ctx)
-        print(ctx.dtype)
         for m, imt in enumerate(imts):
             C = self.COEFFS[imt]
             mean[m] = (
@@ -120,7 +119,16 @@ class Lin2009(GMPE):
                 _get_style_of_faulting_term(C, ctx.rake) +
                 _get_site_response_term(C, ctx.vs30))
             sig[m] = C['sigma']
-        print(mean)
+        
+        name = []
+        thread_id = threading.get_ident()
+        ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])
+        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))        
+        name = [self.__class__.__name__]*len(ctx_tmp)
+        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'gmm', name) # 跑多斷層要註解掉，不然會報錯
+        header = ','.join(ctx_tmp.dtype.names)
+        np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/{self.__class__.__name__}_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
+
     #: Coefficient table for rock sites, see table 3 page 227.
     COEFFS = CoeffsTable(sa_damping=5.0, table="""\
     IMT       C1      C2       C3       C4      C5       H       C6      C7       C8  sigma

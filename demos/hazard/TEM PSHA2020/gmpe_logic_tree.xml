@@ -6,11 +6,20 @@
             <logicTreeBranchSet uncertaintyType="gmpeModel" branchSetID="bs1"
                     applyToTectonicRegionType="Active Shallow Crust">
 
-                <logicTreeBranch branchID="b4">
-                    <uncertaintyModel>PhungEtAl2020Asc</uncertaintyModel>
-                    <uncertaintyWeight>1.0</uncertaintyWeight>
+                <logicTreeBranch branchID="b5">
+                    <uncertaintyModel>ChaoEtAl2020Asc</uncertaintyModel>
+                    <uncertaintyWeight>0.5</uncertaintyWeight>
                 </logicTreeBranch>
 
+                <logicTreeBranch branchID="b4">
+                    <uncertaintyModel>Lin2011foot</uncertaintyModel>
+                    <uncertaintyWeight>0.2</uncertaintyWeight>
+                </logicTreeBranch>
+
+                <logicTreeBranch branchID="b6">
+                    <uncertaintyModel>Lin2011hanging</uncertaintyModel>
+                    <uncertaintyWeight>0.3</uncertaintyWeight>
+                </logicTreeBranch>
 
             </logicTreeBranchSet>
         </logicTreeBranchingLevel>

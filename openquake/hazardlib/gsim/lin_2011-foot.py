@@ -25,7 +25,8 @@ import numpy as np
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable
 from openquake.hazardlib import const
 from openquake.hazardlib.imt import PGA, SA
-
+from numpy.lib import recfunctions
+import threading
 
 class Lin2011foot(GMPE):
     """
@@ -103,7 +104,7 @@ class Lin2011foot(GMPE):
         """
         mean[idx] = (C['C1'] + C['C2'] * mag + C['C3'] * np.log(rhypo[idx] +
                      C['C4'] * np.exp(C['C5'] * mag)))
-
+        
     def _compute_std(self, C, stddevs, idx):
         """
         Compute total standard deviation, see tables 3 and 4, pages 227 and
