@@ -188,15 +188,16 @@ class PhungEtAl2020Asc(GMPE):
             lnmed += _basin_term(self.region, C, ctx.vs30, ctx.z1pt0)
             mean[m] = lnmed
             sig[m], tau[m], phi[m] = get_stddevs(C)
-
-        name = []
-        thread_id = threading.get_ident()
-        ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])
-        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))
-        name = [self.__class__.__name__]*len(ctx_tmp)
-        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'gmm', name) # 跑多斷層要註解掉，不然會報錯
-        header = ','.join(ctx_tmp.dtype.names)
-        np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/{self.__class__.__name__}_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
+        print(ctx.dtype.names)
+        print(ctx)
+        # name = []
+        # thread_id = threading.get_ident()
+        # ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])
+        # ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))
+        # name = [self.__class__.__name__]*len(ctx_tmp)
+        # ctx_tmp = recfunctions.append_fields(ctx_tmp, 'gmm', name) # 跑多斷層要註解掉，不然會報錯
+        # header = ','.join(ctx_tmp.dtype.names)
+        # np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/{self.__class__.__name__}_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
 
     COEFFS = CoeffsTable(sa_damping=5, table="""\
      imt    c1     c1_a         c1_b        c1_c         c1_d        c3     c5     c6      c7           c7_b        c8     c8_b   c9     c9_a   c9_b    c11         c11_b        c12         c12_b        c_n         c_m      c_g2        c_g3        c_hm    dp           phi2    phi3     phi4      c_g1tw     phi1tw       dc_g1as      c_g1ca       phi1ca      c_g1jp        phi1jp       c_g1glb      phi1glb     phi5tw  phi5ca      phi5jp      tau         phiss  phis2s

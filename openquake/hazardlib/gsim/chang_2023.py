@@ -40,7 +40,7 @@ class Chang2023(GMPE):
     #: Supported intensity measure component is orientation-independent
     #: average horizontal :attr:`~openquake.hazardlib.const.IMC.RotD50`,
     #: see page 1025.
-    DEFINED_FOR_INTENSITY_MEASURE_COMPONENT = const.IMC.RotD50
+    DEFINED_FOR_INTENSITY_MEASURE_COMPONENT = const.IMC.GEOMETRIC_MEAN
 
     #: Supported standard deviation types are inter-event, intra-event
     #: and total, see paragraph "Equations for standard deviations", page
@@ -82,5 +82,6 @@ class Chang2023(GMPE):
             predict = self.ML_model.predict(xgb.DMatrix(np.column_stack((np.log(ctx.vs30), ctx.mag, np.log(ctx.rrup), ctx.rake, sta_id))))
             mean[m] = np.log(np.exp(predict)/980)
             sig[m], tau[m], phi[m] = 0.35,0.12,0.34
-        print(mean)
+        print(ctx.dtype.names)
+
         

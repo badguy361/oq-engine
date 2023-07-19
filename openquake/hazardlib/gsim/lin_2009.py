@@ -119,7 +119,7 @@ class Lin2009(GMPE):
                 _get_style_of_faulting_term(C, ctx.rake) +
                 _get_site_response_term(C, ctx.vs30))
             sig[m] = C['sigma']
-        
+        print(ctx.dtype.names)
         name = []
         thread_id = threading.get_ident()
         ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])

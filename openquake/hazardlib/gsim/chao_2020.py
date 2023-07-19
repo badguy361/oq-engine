@@ -229,14 +229,14 @@ class ChaoEtAl2020SInter(GMPE):
 
             sig[m], tau[m], phi[m] = get_stddevs(self.SBCR, C, ctx.mag)
         
-        name = []
-        thread_id = threading.get_ident()
-        ctx_tmp = recfunctions.drop_fields(ctx.copy(), ['probs_occur'])
-        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))
-        name = [self.__class__.__name__]*len(ctx_tmp)
-        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'gmm', name) # 跑多斷層要註解掉，不然會報錯
-        header = ','.join(ctx_tmp.dtype.names)
-        np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/{self.__class__.__name__}_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
+        # name = []
+        # thread_id = threading.get_ident()
+        # ctx_tmp = recfunctions.drop_fields(ctx.copy(), ['probs_occur'])
+        # ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))
+        # name = [self.__class__.__name__]*len(ctx_tmp)
+        # ctx_tmp = recfunctions.append_fields(ctx_tmp, 'gmm', name) # 跑多斷層要註解掉，不然會報錯
+        # header = ','.join(ctx_tmp.dtype.names)
+        # np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/{self.__class__.__name__}_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
 
     COEFFS = CoeffsTable(sa_damping=5, table="""\
     imt    c1                  c2                  c3                  c4_if               c4_is               c6                  c7                 c8_cr              c8_sb               c10                 c11_cr              c11_sb              c13                 c14_cr              c14_if              c14_is              c17_cr              c17_sb             c19_cr             c19_sb              c21_cr              c21_sb              c23                 c24                c25                 c26                 c27                 c28                 c29_if              c29_is             tau1_cr            tau2_cr            tau1_sb            tau2_sb            phiss1_cr          phiss2_cr          phiss1_sb          phiss2_sb          phis2s
