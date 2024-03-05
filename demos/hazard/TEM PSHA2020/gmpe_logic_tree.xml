@@ -7,7 +7,7 @@
                     applyToTectonicRegionType="Active Shallow Crust">
 
                 <logicTreeBranch branchID="b5">
-                    <uncertaintyModel>ChaoEtAl2020Asc</uncertaintyModel>
+                    <uncertaintyModel>Lin2009</uncertaintyModel>
                     <uncertaintyWeight>0.5</uncertaintyWeight>
                 </logicTreeBranch>
 

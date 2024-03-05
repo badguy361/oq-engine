@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp2d, griddata
 import pygmt
+TSMIP_df = pd.read_csv(f"TSMIP_FF.csv")
 fault_data = [
     120.6436, 23.6404, 120.6480, 23.6424, 120.6511, 23.6459, 120.6543, 23.6493,
     120.6574, 23.6528, 120.6601, 23.6566, 120.6632, 23.6600, 120.6665, 23.6633,
@@ -54,13 +55,13 @@ fault_data = [
 ]
 #'AbrahamsonEtAl2014','Lin2009','BooreAtkinson2008','Allen2022','Chang2023',
 # PhungEtAl2020Asc,ChaoEtAl2020Asc,CampbellBozorgnia2014
-id = 186
-folder = 'CampbellBozorgnia2014'
+id = 212
+folder = 'Chang2023'
 df_site = pd.read_csv(f"{folder}({id})/sitemesh_{id}.csv", skiprows=[0])
 df_gmf = pd.read_csv(f"{folder}({id})/gmf-data_{id}.csv", skiprows=[0])
 df_total = df_gmf.merge(df_site, how='left', on='site_id')
 
-df_total = df_total.groupby("site_id").mean()
+df_total = df_total.groupby("site_id").median()
 gmv_PGA = df_total["gmv_PGA"]
 x = df_total["lon"]
 y = df_total["lat"]
@@ -74,6 +75,7 @@ fig.basemap(region=region,
 fig.coast(land="gray", water="gray", shorelines="1p,black")
 pygmt.makecpt(cmap="turbo", series=(0, 1.5, 0.1))
 fig.plot(x=fault_data[::2], y=fault_data[1::2],pen="thick,red")
+fig.plot(x=TSMIP_df["STA_Lon_X"], y=TSMIP_df["STA_Lat_Y"], style="c0.2c", pen="white")
 fig.plot(x=x, y=y, style="c0.2c", cmap=True, color=gmv_PGA)
 fig.colorbar(frame=["x+lPGA(g)"])
 fig.savefig(f"{folder}({id})/gmv_PGA.png",dpi=300)

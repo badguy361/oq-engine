@@ -1,0 +1,868 @@
+<ns0:nrml xmlns:ns0="http://openquake.org/xmlns/nrml/0.4" xmlns:ns1="http://www.opengis.net/gml">
+  <ns0:sourceModel name="Active_fault">
+    <ns0:simpleFaultSource id="01" name="Outer Chinshan Structure + Shanchiao fault" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.758574 25.319969 121.761648 25.322507 121.764813 25.325351 121.767729 25.327740 121.771420 25.329165 121.774900 25.330909 121.777022 25.331972 121.779574 25.331780 121.781821 25.331487 121.785046 25.330491 121.787192 25.329828 121.797214 25.328336 121.802048 25.329218 121.806563 25.332069 121.810397 25.332653 121.817240 25.335036 121.822344 25.337149 121.826258 25.338770 121.829263 25.339812 121.832889 25.339635 121.836254 25.339470 121.838451 25.339586 121.840590 25.339699 121.841419 25.339743 121.843637 25.339431 121.845316 25.339195 121.846426 25.339129 121.849742 25.339241 121.851459 25.340210 121.854256 25.341788 121.855835 25.343150 121.858612 25.345546 121.861475 25.350069 121.862326 25.352637 121.864760 25.358210 121.869053 25.363057 121.870182 25.366633 121.872250 25.369057 121.874936 25.369614 121.881410 25.370579 121.886157 25.372557 121.892158 25.373524 121.896739 25.374499 121.901967 25.377477 121.904342 25.378608 121.910968 25.378711 121.916176 25.379108 121.921898 25.384805 121.926185 25.388361 121.931730 25.391478 121.938530 25.393585 121.942331 25.395423 121.949600 25.396953 121.953228 25.396786 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.11" binWidth="0.1">
+      <ns0:occurRates>1.71E-03</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="02" name="Outer Kanchiao structure(ST-&#8545;)" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.688653 25.192918 121.702361 25.201886 121.702361 25.201886 121.717176 25.209876 121.728045 25.216392 121.738257 25.222611 121.749143 25.231513 121.753216 25.233359 121.762789 25.241968 121.770222 25.249394 121.778149 25.256816 121.783770 25.263057 121.787720 25.264528 121.794455 25.265239 121.798890 25.265513 121.805154 25.269510 121.816036 25.276466 121.822631 25.280460 121.824943 25.282538 121.828920 25.287889 121.833123 25.290224 121.838563 25.293328 121.841878 25.297788 121.845181 25.300456 121.855197 25.300249 121.856678 25.300688 121.858158 25.300978 121.858816 25.301124 121.858816 25.301124 121.865564 25.300707 121.871207 25.300170 121.871207 25.300170 121.876160 25.303873 121.882256 25.306673 121.888508 25.308128 121.892289 25.308703 121.894603 25.310778 121.899889 25.314926 121.904664 25.316539 121.911081 25.318142 121.919313 25.320777 121.926224 25.322525 121.933630 25.324419 121.938911 25.327670 121.944023 25.330324 121.949942 25.331033 121.955368 25.331744 121.962462 25.335728 121.969873 25.338217 121.976954 25.340410 121.981901 25.342765 121.983417 25.343383 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.591192272417927" binWidth="0.1">
+      <ns0:occurRates>0.0007272901116756514</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="03" name="Outer Chilung Structure 1" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.783852 25.173917 121.801600 25.178599 121.818699 25.184178 121.831179 25.185900 121.839720 25.187344 121.849274 25.192963 121.856865 25.199189 121.861815 25.203041 121.865130 25.207799 121.867139 25.213460 121.871126 25.220304 121.874451 25.226255 121.878081 25.228921 121.890260 25.233625 121.899807 25.237448 121.909040 25.243065 121.917953 25.249608 121.926873 25.257016 121.935461 25.263829 121.942066 25.268862 121.949974 25.272394 121.960523 25.277700 121.968422 25.280037 121.978294 25.282659 121.989806 25.284970 121.999005 25.285505 122.010846 25.287813 122.023346 25.290414 122.034860 25.292722 122.044408 25.295640 122.051679 25.300962 122.057973 25.307187 122.064591 25.312812 122.071858 25.317536 122.080088 25.319566 122.092900 25.319770 122.103584 25.320735 122.109178 25.321887 122.116782 25.327204 122.128008 25.333388 122.142525 25.340142 122.159121 25.350804 122.167107 25.353687 122.180961 25.353844 122.190976 25.353228 122.205133 25.354184 122.219192 25.352365 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.74949420075619" binWidth="0.1">
+      <ns0:occurRates>0.0006389151140219365</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="04" name="Outer Chilung Structure 2" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.160684 25.315221 122.181459 25.323714 122.199283 25.332526 122.216128 25.341643 122.232311 25.350166 122.242556 25.356050 122.252477 25.362236 122.263415 25.371397 122.274686 25.380853 122.281656 25.387360 122.287293 25.392087 122.294235 25.395907 122.306449 25.400874 122.321644 25.407843 122.336835 25.419123 122.352954 25.431721 122.365726 25.444567 122.379353 25.449796 122.396559 25.450142 122.411274 25.451177 122.424600 25.455628 122.437929 25.460318 122.448383 25.471195 122.461158 25.478567 122.473655 25.487279 122.485823 25.493048 122.497667 25.496408 122.514493 25.497039 122.528688 25.499570 122.542449 25.510841 122.553393 25.516180 122.567002 25.516293 122.580424 25.526305 122.591075 25.538250 122.602377 25.546378 122.614474 25.561479 122.625055 25.567709 122.641182 25.570068 122.658062 25.576225 122.672933 25.588750 122.687584 25.585409 122.702306 25.587142 122.715693 25.593333 122.730553 25.604582 122.743355 25.608873 122.758127 25.613774 122.774319 25.619925 122.793302 25.625406 122.813611 25.625790 122.837439 25.627396 122.860586 25.630276 122.886685 25.642635 122.907046 25.646178 122.926769 25.653535 122.945012 25.655832 122.962463 25.652425 122.983433 25.650238 123.007074 25.640395 123.035784 25.640632 123.063027 25.637077 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.065994822002753" binWidth="0.1">
+      <ns0:occurRates>0.0008544945784519356</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="05" name="Outer Shenaokeng Structure 1" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.842426 25.158164 121.863741 25.166281 121.882684 25.172619 121.909509 25.179861 121.928979 25.185950 121.946639 25.195392 121.960893 25.205331 121.973769 25.206919 121.999255 25.209376 122.024245 25.215177 122.040075 25.224142 122.048841 25.236022 122.056959 25.245470 122.064099 25.251151 122.079391 25.257967 122.102330 25.267829 122.125010 25.277689 122.146903 25.287312 122.166688 25.295994 122.179100 25.302583 122.193370 25.311066 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.647878084183339" binWidth="0.1">
+      <ns0:occurRates>0.0007638426228227645</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="06" name="Outer Shenaokeng Structure 2" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.199275 25.270225 122.234897 25.286411 122.257935 25.304129 122.286579 25.329675 122.312043 25.351661 122.341396 25.367875 122.379399 25.381137 122.413399 25.388695 122.458445 25.396136 122.512242 25.409205 122.554181 25.419514 122.596916 25.429802 122.641215 25.438627 122.685521 25.447438 122.752002 25.461560 122.790063 25.473995 122.822640 25.488638 122.855103 25.495394 122.904221 25.506942 122.936761 25.517977 122.967033 25.534765 122.990926 25.547335 123.023520 25.560498 123.070938 25.562700 123.101641 25.563787 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.045672473212922" binWidth="0.1">
+      <ns0:occurRates>0.0004976118536411582</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="07" name="Outer Longdong Structure 1" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.980521 25.088494 121.993748 25.102439 122.004641 25.111322 122.013211 25.116638 122.023065 25.118660 122.032913 25.119786 122.037516 25.121247 122.050705 25.129513 122.070136 25.138928 122.086598 25.145974 122.094504 25.149797 122.107221 25.157691 122.115499 25.161914 122.126537 25.167544 122.139578 25.177443 122.151461 25.189135 122.162155 25.199408 122.176396 25.211079 122.194094 25.214508 122.211622 25.218147 122.228620 25.228787 122.243367 25.234813 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.545497359890788" binWidth="0.1">
+      <ns0:occurRates>0.0006470404397911921</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="08" name="Outer Longdong Structure 2" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.337931 25.261886 122.362260 25.270918 122.380404 25.277436 122.391603 25.282872 122.400669 25.285461 122.414380 25.289915 122.429985 25.294541 122.448757 25.300281 122.462488 25.306068 122.477037 25.309935 122.489686 25.313055 122.510284 25.319819 122.531385 25.326288 122.556486 25.333094 122.578198 25.337639 122.603679 25.340994 122.619476 25.343304 122.650850 25.350024 122.670036 25.354011 122.686680 25.356496 122.701454 25.360529 122.723164 25.364288 122.739613 25.367724 122.757756 25.371902 122.768293 25.373495 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.702254266928909" binWidth="0.1">
+      <ns0:occurRates>0.0004890446183071211</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="09" name="Outer Aoti Structure 1" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.064297 25.009313 122.079855 25.017392 122.095862 25.025701 122.114864 25.035561 122.126245 25.043469 122.146642 25.058527 122.163964 25.070399 122.176360 25.081486 122.183250 25.086854 122.190811 25.093222 122.203641 25.096935 122.214238 25.097853 122.222445 25.097135 122.243092 25.096335 122.258313 25.097315 122.273070 25.100696 122.289686 25.105868 122.303886 25.110026 122.310502 25.112406 122.335043 25.119110 122.350397 25.126432 122.350397 25.126432 122.374420 25.135094 122.392812 25.141952 122.422041 25.150713 122.450609 25.159274 122.469890 25.172531 122.483084 25.182190 122.498951 25.193630 122.513628 25.202368 122.538456 25.214916 122.580749 25.241805 122.618361 25.265678 122.638125 25.275457 122.677901 25.289577 122.712249 25.302393 122.733551 25.308928 122.769601 25.326422 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.958619963001775" binWidth="0.1">
+      <ns0:occurRates>0.0009330441842403796</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="10" name="Outer Aoti Structure 2" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.758557 25.286918 122.772766 25.291836 122.784008 25.295181 122.797319 25.299036 122.810506 25.300929 122.820929 25.302015 122.828179 25.302512 122.843266 25.303499 122.854636 25.304241 122.867933 25.304676 122.882511 25.306494 122.891886 25.310017 122.900014 25.313164 122.906622 25.316040 122.927920 25.328055 122.950529 25.341680 122.983615 25.346950 123.026921 25.352430 123.070181 25.353751 123.106710 25.360038 123.177858 25.365227 123.243774 25.354083 123.281831 25.347575 123.318054 25.342778 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.813036039406409" binWidth="0.1">
+      <ns0:occurRates>0.0003672017681019191</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="11" name="North Yilan Ridge Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.468344 24.982248 122.458738 24.967631 122.450272 24.960625 122.437208 24.954638 122.432117 24.949356 122.424121 24.946548 122.408418 24.944693 122.387946 24.938673 122.375342 24.932122 122.367472 24.922987 122.359831 24.916387 122.352032 24.912063 122.341535 24.910056 122.328699 24.908722 122.312976 24.907786 122.300837 24.906995 122.289767 24.904268 122.280369 24.899830 122.265359 24.891718 122.249420 24.885099 122.234626 24.878505 122.218195 24.871624 122.198186 24.866860 122.179817 24.859100 122.165604 24.850971 122.147055 24.840725 122.126964 24.833354 122.112780 24.827727 122.100576 24.823877 122.085653 24.823269 122.073484 24.823357 122.062063 24.819139 122.047129 24.812509 122.028194 24.801175 122.006133 24.791293 121.980948 24.782861 121.951799 24.768718 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>13.7</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.957245719988652" binWidth="0.1">
+      <ns0:occurRates>0.0006956930206370545</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="12" name="South Yilan Ridge Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.251698 24.856236 122.274152 24.863212 122.295283 24.865956 122.316230 24.870464 122.333867 24.875452 122.350755 24.878063 122.369939 24.884575 122.395891 24.899023 122.402706 24.911140 122.415819 24.924271 122.426098 24.929905 122.440336 24.938008 122.454951 24.944672 122.471934 24.952028 122.487335 24.958324 122.496000 24.960028 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>13.7</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.629301345965979" binWidth="0.1">
+      <ns0:occurRates>0.0004033026278068693</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="13" name="North Yonaguni Rift Structure (North-boundary Fault)" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.525388 24.937666 122.585930 24.940616 122.651993 24.944913 122.719560 24.944149 122.762791 24.945076 122.762791 24.945076 122.883087 24.950052 122.883087 24.950052 122.935767 24.952242 122.994778 24.957194 123.050348 24.962886 123.083392 24.965292 123.116375 24.964111 123.138371 24.963796 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>13.3</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.9685726543810596" binWidth="0.1">
+      <ns0:occurRates>0.0017889671444511358</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="14" name="South Yonaguni Rift Structure (South-boundary Fault)" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>123.067944 24.849461 123.018471 24.848705 122.997278 24.848990 122.967496 24.852251 122.943151 24.851853 122.907951 24.850158 122.881230 24.848348 122.846627 24.844481 122.812900 24.844100 122.796766 24.843149 122.789279 24.840736 122.783229 24.838595 122.772775 24.837462 122.772606 24.837324 122.757378 24.836626 122.757378 24.836626 122.672258 24.839370 122.672258 24.839370 122.651839 24.838881 122.616513 24.839267 122.589831 24.840270 122.570313 24.849074 122.547687 24.860774 122.521026 24.863914 122.486459 24.862829 122.456561 24.858108 122.414888 24.853493 122.388111 24.846579 122.351045 24.831872 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>13.3</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.045404890008511" binWidth="0.1">
+      <ns0:occurRates>0.0016002876590302773</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="15" name="East Yonaguni Rift Structure A" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>123.347339 25.031942 123.391838 25.042273 123.444290 25.052842 123.481584 25.057553 123.513578 25.064281 123.551899 25.064830 123.582272 25.064305 123.608759 25.067451 123.632683 25.074248 123.645993 25.078824 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>13.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.647974962828576" binWidth="0.1">
+      <ns0:occurRates>0.0015823640411076621</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="16" name="East Yonaguni Rift Structure B" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>123.792462 24.954624 123.771329 24.953816 123.721014 24.946322 123.682602 24.939800 123.641510 24.928795 123.577168 24.918758 123.524788 24.916101 123.457991 24.916202 123.397381 24.919728 123.348463 24.923553 123.297880 24.927895 123.275451 24.949563 123.240701 24.951918 123.207599 24.952464 123.165540 24.956641 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>13.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.9784305657595835" binWidth="0.1">
+      <ns0:occurRates>0.0009797592565026897</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="17" name="Suao Fault Zone" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.124222 24.109626 122.117904 24.133368 122.101878 24.207058 122.090102 24.292181 122.081231 24.352439 122.065354 24.449054 122.065354 24.449054 122.064721 24.454749 122.062276 24.476670 122.060853 24.495214 122.060444 24.509178 122.059244 24.522858 122.057276 24.539239 122.054997 24.549846 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>85.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>17.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.963450646930765" binWidth="0.1">
+      <ns0:occurRates>0.027108510744367195</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>180</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="18" name="West Yaeyama Fault Zone" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>122.605998 23.623512 122.536764 23.644277 122.472153 23.663058 122.387363 23.688683 122.276643 23.719256 122.208347 23.740826 122.137119 23.786277 122.069007 23.837646 121.982678 23.960842 121.982678 23.960842 121.950873 24.025243 121.934219 24.059984 121.921374 24.082756 121.907182 24.099562 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>85.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>14.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.16276402839904" binWidth="0.1">
+      <ns0:occurRates>0.0165533578988054</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>180</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="19" name="Yaeyama Fault Zone" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>124.085663 23.450660 123.955763 23.447762 123.824343 23.449521 123.824343 23.449521 123.758406 23.449909 123.670874 23.459312 123.527530 23.474595 123.390382 23.493245 123.219150 23.529197 123.123172 23.542724 122.971981 23.582206 122.931628 23.587012 122.869679 23.604250 122.820262 23.629199 122.777980 23.665515 122.748247 23.710995 122.732371 23.746283 122.721966 23.783659 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>85.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>14.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.37659864842684" binWidth="0.1">
+      <ns0:occurRates>0.00873237955979235</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>180</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="20" name="Ryukyu Upper Plate Splay Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>124.491369 23.337513 124.456730 23.320240 124.432092 23.311761 124.396018 23.314352 124.353220 23.321590 124.302626 23.329883 124.256864 23.336255 124.193428 23.339367 124.154149 23.331141 124.123153 23.321838 124.099463 23.311481 124.079559 23.295631 124.040173 23.281963 123.997070 23.276476 123.960944 23.277162 123.929660 23.275945 123.900132 23.265665 123.864141 23.272643 123.826364 23.287768 123.792239 23.291087 123.737545 23.292052 123.698519 23.287724 123.676991 23.283016 123.631696 23.285306 123.593433 23.296097 123.547971 23.304459 123.513039 23.317716 123.482346 23.322775 123.440685 23.329523 123.411991 23.335479 123.376088 23.336705 123.345148 23.328370 123.312699 23.317343 123.257260 23.312058 123.230199 23.315831 123.192219 23.324492 123.157275 23.339874 123.124533 23.355895 123.085916 23.371988 123.061738 23.373663 123.033860 23.373351 123.013245 23.368200 122.997713 23.359597 122.975584 23.351075 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.5</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.467749171507611" binWidth="0.1">
+      <ns0:occurRates>0.013993929969828314</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="21" name="Takangkou High Thrust" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.808633 24.055762 121.810481 24.039269 121.807579 24.012050 121.799226 23.985935 121.784217 23.954765 121.777059 23.931510 121.762848 23.901480 121.755316 23.879658 121.750097 23.853166 121.748370 23.823790 121.741981 23.796227 121.737915 23.765823 121.731202 23.749012 121.733810 23.728215 121.723599 23.711779 121.718471 23.699260 121.714416 23.679047 121.713383 23.668002 121.708120 23.653991 121.704174 23.643556 121.705108 23.636385 121.707316 23.625027 121.706937 23.614875 121.703961 23.603869 121.700989 23.593430 121.700281 23.582085 121.701509 23.569238 121.708223 23.552484 121.716234 23.536321 121.727512 23.525817 121.732655 23.518625 121.734535 23.507268 121.735375 23.483612 121.733064 23.475560 121.730773 23.471091 121.730428 23.467210 121.731702 23.463322 121.729728 23.457657 121.724816 23.447227 121.723801 23.439169 121.724734 23.432296 121.725964 23.420344 121.725832 23.408161 121.724984 23.394905 121.724137 23.382007 121.722499 23.366247 121.720086 23.350848 121.721167 23.335361 121.724590 23.322444 121.734261 23.317023 121.747440 23.314452 121.761762 23.308291 121.777602 23.296387 121.780993 23.279168 121.783233 23.264105 121.783233 23.264105 121.787955 23.251880 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>3.5</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.971855409104174" binWidth="0.1">
+      <ns0:occurRates>0.0007254710595664818</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="22" name="Chimei Canyon Thrust" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.901807 23.683481 121.899416 23.675253 121.902083 23.666996 121.902819 23.660899 121.905109 23.654436 121.907393 23.647256 121.907740 23.641162 121.908872 23.636138 121.908050 23.629693 121.902187 23.625427 121.895556 23.622598 121.892794 23.616881 121.892367 23.611149 121.890775 23.605783 121.886454 23.599358 121.884042 23.587546 121.883197 23.577517 121.871466 23.567370 121.856273 23.562437 121.846899 23.555680 121.844126 23.547453 121.861763 23.537054 121.861663 23.521814 121.859440 23.497537 121.863400 23.471320 121.862729 23.447511 121.861212 23.425231 121.854874 23.405914 121.850132 23.393039 121.842681 23.381253 121.834861 23.372336 121.832454 23.359878 121.833553 23.349479 121.838547 23.341210 121.837697 23.329389 121.845410 23.321822 121.838749 23.311465 121.828973 23.299332 121.845617 23.272526 121.834193 23.259251 121.806366 23.260825 121.787955 23.251880 121.785516 23.232719 121.784847 23.195159 121.787253 23.166093 121.772222 23.149974 121.763889 23.133820 121.755017 23.112906 121.749783 23.097642 121.736787 23.074841 121.698725 23.067843 121.688633 23.063587 121.678881 23.049652 121.676496 23.037477 121.671247 23.025386 121.662697 23.018971 121.659544 23.007515 121.662197 22.995677 121.664474 22.986350 121.659389 22.975619 121.655460 22.963450 121.645718 22.949513 121.633761 22.931627 121.637158 22.906755 121.639152 22.893410 121.641678 22.883873 121.646789 22.877660 121.646199 22.861468 121.642529 22.846241 121.637321 22.831495 121.626985 22.818676 121.618723 22.809658 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>2.5</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.460671926391203" binWidth="0.1">
+      <ns0:occurRates>0.011959461581641418</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="23" name="East Taitung Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.633175 22.950557 121.612220 22.937736 121.583515 22.921358 121.552519 22.910717 121.516063 22.887185 121.490484 22.873647 121.468753 22.852925 121.450136 22.836492 121.426898 22.824370 121.404433 22.810809 121.382769 22.805845 121.365734 22.796566 121.340958 22.782284 121.315414 22.768000 121.300714 22.761577 121.300714 22.761577 121.273647 22.754457 121.246586 22.749484 121.211797 22.743082 121.177015 22.739540 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>45.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>13.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.022344103843455" binWidth="0.1">
+      <ns0:occurRates>0.010396351928674946</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="24" name="East Lutao Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.650458 22.754956 121.655024 22.739885 121.647991 22.723427 121.647914 22.706941 121.654016 22.690429 121.656248 22.672500 121.649961 22.649587 121.634420 22.628862 121.618102 22.605987 121.620354 22.591642 121.622606 22.577297 121.600150 22.560895 121.600082 22.545125 121.576844 22.524422 121.569073 22.510830 121.555843 22.482203 121.541128 22.467199 121.530235 22.442146 121.530164 22.423508 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>16.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.141518196941556" binWidth="0.1">
+      <ns0:occurRates>0.0055922880987253855</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="25" name="East Lanyu Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.560352 22.405825 121.579941 22.392819 121.599496 22.372961 121.622304 22.350045 121.639387 22.328671 121.654789 22.298931 121.655476 22.270771 121.657822 22.247931 121.659311 22.216724 121.663305 22.196922 121.663305 22.196922 121.693384 22.164986 121.720236 22.143562 121.756906 22.126654 121.774712 22.096891 121.797329 22.052644 121.782505 22.029124 121.789670 21.996366 121.803328 21.958250 121.812106 21.923885 121.812913 21.922359 121.812913 21.922359 121.818448 21.891815 121.821527 21.859837 121.819640 21.814946 121.819415 21.775373 121.833883 21.741055 121.854984 21.728010 121.879247 21.699725 121.890451 21.667702 121.888697 21.647164 121.890188 21.624705 121.889987 21.591982 121.902028 21.565281 121.924542 21.523301 121.936415 21.472246 121.940241 21.434933 121.930271 21.400742 121.911399 21.371621 121.910947 21.368111 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>16.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.585677772063459" binWidth="0.1">
+      <ns0:occurRates>0.0029813260467606547</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="26" name="East Huatung Ridge Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>121.307558 22.701928 121.307500 22.646156 121.309293 22.625851 121.310231 22.572313 121.310097 22.512025 121.310097 22.512025 121.310066 22.498092 121.316606 22.465303 121.321949 22.440919 121.337062 22.421521 121.355795 22.407873 121.376496 22.389128 121.391881 22.362098 121.393336 22.331269 121.394030 22.304026 121.395506 22.281083 121.390847 22.267474 121.379257 22.253881 121.369217 22.243151 121.358397 22.227404 121.354503 22.210064 121.352911 22.189278 121.355161 22.165616 121.361263 22.144096 121.369646 22.112534 121.380330 22.080250 121.387906 22.037936 121.380142 22.009995 121.368555 21.988515 121.366205 21.971315 121.344636 21.951288 121.336151 21.937685 121.323826 21.924088 121.319189 21.911982 121.306105 21.901253 121.291478 21.886224 121.292198 21.862565 121.287543 21.838915 121.287490 21.812390 121.286631 21.766508 121.286576 21.738692 121.285770 21.719336 121.277287 21.696409 121.283360 21.664137 121.267738 21.626985 121.269788 21.547070 121.270821 21.520054 121.268446 21.478476 121.256124 21.440497 121.230038 21.408989 121.197076 21.378919 121.164133 21.353144 121.128948 21.333357 121.112943 21.317147 121.101193 21.290387 121.086378 21.248907 121.082281 21.215929 121.071049 21.180085 121.061356 21.153800 121.047081 21.130383 121.026191 21.112224 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>17.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.596199749023846" binWidth="0.1">
+      <ns0:occurRates>0.00085834421281691</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="27" name="East Southern Longitudinal Trough Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.987942 21.838249 121.003300 21.851991 121.019302 21.872302 121.032109 21.896198 121.045558 21.915312 121.053246 21.927258 121.054531 21.940401 121.066065 21.956527 121.078245 21.977432 121.089782 21.989374 121.105161 21.995937 121.116056 22.001904 121.134646 22.014435 121.155806 22.029949 121.161581 22.037710 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.779774006138665" binWidth="0.1">
+      <ns0:occurRates>0.004684188376322831</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="28" name="Southwest Offshore Structure G" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>119.770578 21.585406 119.766688 21.592247 119.755072 21.606198 119.748554 21.621381 119.747163 21.634512 119.742599 21.659895 119.735728 21.678360 119.728537 21.696822 119.718392 21.723624 119.709595 21.742372 119.704074 21.751946 119.696904 21.767121 119.689041 21.787965 119.679923 21.805812 119.670222 21.817382 119.657009 21.828027 119.632873 21.843359 119.612191 21.864988 119.607636 21.872774 119.594655 21.891479 119.591593 21.909969 119.593008 21.928795 119.590292 21.944601 119.575096 21.959700 119.567293 21.971578 119.556278 21.984383 119.550695 21.998071 119.551202 22.011216 119.557507 22.021127 119.561574 22.030719 119.563677 22.044475 119.564484 22.059713 119.563705 22.073443 119.561704 22.081190 119.557460 22.088918 119.554497 22.096656 119.555007 22.109562 119.555831 22.123008 119.552462 22.139104 119.546576 22.150400 119.545161 22.163229 119.545680 22.175179 119.548464 22.185059 119.547990 22.199986 119.549416 22.217260 119.550585 22.228320 119.557192 22.240921 119.561933 22.247832 119.568261 22.256548 119.570058 22.269106 119.571834 22.283755 119.575567 22.295435 119.579308 22.306218 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>35.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.090096285886219" binWidth="0.1">
+      <ns0:occurRates>0.0018634970141070382</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="29" name="Southwest Offshore Structure H-1" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>119.630826 21.974412 119.634894 21.990931 119.633206 22.006686 119.630694 22.028168 119.635985 22.037529 119.643897 22.054439 119.645586 22.078894 119.642335 22.097144 119.633751 22.109974 119.626323 22.122455 119.619264 22.136372 119.610273 22.150989 119.606667 22.165651 119.606130 22.181057 119.607930 22.193615 119.613228 22.202798 119.621907 22.220432 119.622096 22.240502 119.623870 22.255927 119.624814 22.277437 119.624678 22.291412 119.622237 22.304651 119.623665 22.316131 119.629698 22.329442 119.639209 22.341706 119.649137 22.350748 119.658689 22.359070 119.665944 22.365939 119.674332 22.375326 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>35.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.016375203338077" binWidth="0.1">
+      <ns0:occurRates>0.0011087524417198499</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="30" name="Southwest Offshore Structure I" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>119.817830 21.821057 119.814567 21.828799 119.801029 21.841245 119.779139 21.857212 119.764300 21.871438 119.744343 21.885025 119.721048 21.913517 119.710608 21.935537 119.701450 21.956968 119.697396 21.980231 119.696538 22.004116 119.701438 22.028645 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.03645533105568" binWidth="0.1">
+      <ns0:occurRates>0.001579589581002776</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="31" name="Southwest Offshore Structure K" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>119.868059 21.697398 119.853302 21.704465 119.825013 21.724577 119.796048 21.748263 119.774751 21.771403 119.761751 21.795796 119.740962 21.832674 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.646667601784491" binWidth="0.1">
+      <ns0:occurRates>0.003327555146520891</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="32" name="Southwest Offshore Structure L" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.078548 21.422776 120.076138 21.440685 120.066011 21.467871 120.046604 21.507906 120.034143 21.538660 120.018636 21.565810 119.996997 21.592205 119.990664 21.621200 119.990479 21.647722 119.999532 21.669283 119.988616 21.695023 119.970837 21.714269 119.936012 21.755625 119.902740 21.791966 119.879570 21.810448 119.858578 21.843995 119.834450 21.884111 119.808935 21.904715 119.797215 21.928285 119.776223 21.957518 119.772171 21.981859 119.771236 22.001205 119.766463 22.019805 119.759346 22.042689 119.754406 22.079924 119.734970 22.103428 119.728760 22.109831 119.714746 22.128357 119.699860 22.157626 119.705806 22.180610 119.707081 22.209433 119.707746 22.220907 119.715202 22.247486 119.709530 22.278261 119.709365 22.296178 119.719168 22.319192 119.720546 22.337122 119.711920 22.353539 119.705623 22.367823 119.707823 22.380025 119.713744 22.406592 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>4.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.747703874488444" binWidth="0.1">
+      <ns0:occurRates>0.0011141835466341688</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="33" name="Southwest Offshore Structure M" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>119.775941 22.267375 119.784023 22.282726 119.787361 22.312378 119.779463 22.334777 119.783352 22.360132 119.794490 22.379233 119.798004 22.388816 119.804405 22.421356 119.806195 22.452429 119.803778 22.494461 119.805617 22.519799 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.718969176522166" binWidth="0.1">
+      <ns0:occurRates>0.0012354833839950089</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="34" name="Southwest Offshore Structure A" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.124720 21.552899 120.121239 21.600673 120.118561 21.620970 120.110770 21.641240 120.100421 21.661496 120.083020 21.684699 120.059158 21.717421 120.034666 21.747149 120.014089 21.764053 119.985136 21.788967 119.950995 21.822206 119.929853 21.846873 119.915517 21.881187 119.910163 21.911975 119.899550 21.940147 119.882168 21.968654 119.878338 21.999689 119.870305 22.030457 119.861665 22.053335 119.844804 22.078065 119.820732 22.102790 119.795512 22.128888 119.793916 22.165671 119.800423 22.184833 119.810531 22.203065 119.828368 22.218008 119.834885 22.236691 119.842885 22.262552 119.853728 22.302231 119.873485 22.319871 119.882939 22.342037 119.891158 22.358221 119.906443 22.374452 119.905581 22.402520 119.908541 22.434795 119.910824 22.471545 119.919645 22.494302 119.927867 22.511679 119.935453 22.528454 119.938495 22.551172 119.937002 22.578041 119.937435 22.605520 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>6.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.083470743694791" binWidth="0.1">
+      <ns0:occurRates>0.0043399227851791304</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="35" name="Southwest Offshore Structure B-1" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>119.936676 22.155131 119.932493 22.165617 119.930311 22.182806 119.928106 22.202861 119.926941 22.221108 119.925813 22.234481 119.929242 22.256007 119.944032 22.269006 119.951598 22.287214 119.962746 22.307356 119.962123 22.322166 119.947635 22.336408 119.939315 22.349734 119.939174 22.368369 119.945181 22.389434 119.951246 22.402854 119.960644 22.424514 119.961590 22.435510 119.968106 22.458011 119.976138 22.484344 119.987259 22.510697 120.006137 22.531840 120.024002 22.551541 120.058500 22.577551 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>6.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.845666130714182" binWidth="0.1">
+      <ns0:occurRates>0.007430580957302014</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="36" name="Southwest Offshore Structure B-2" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.108061 21.704907 120.096502 21.713208 120.071406 21.738757 120.042499 21.769241 120.042499 21.769241 120.033354 21.782593 120.020170 21.802587 120.003120 21.826141 119.991035 21.852518 119.985132 21.872912 119.976170 21.891136 119.964110 21.912565 119.954006 21.928630 119.940818 21.945749 119.934576 21.958612 119.927942 21.972188 119.927942 21.972188 119.926397 21.981784 119.926138 21.992402 119.926138 21.992402 119.925313 21.999923 119.924444 22.013179 119.924720 22.027517 119.927286 22.044020 119.929889 22.055865 119.932101 22.068423 119.930645 22.074602 119.923907 22.084115 119.909939 22.100270 119.900108 22.111673 119.896644 22.122883 119.896867 22.132678 119.899845 22.145600 119.900781 22.157075 119.900179 22.168540 119.899584 22.179049 119.899964 22.196254 119.901399 22.209644 119.906404 22.225925 119.913203 22.237327 119.917453 22.248902 119.918447 22.261845 119.916833 22.271392 119.919971 22.286594 119.922951 22.301146 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>6.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.630780809234157" binWidth="0.1">
+      <ns0:occurRates>0.009383890191262298</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="37" name="Southwest Offshore Structure B-3" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.196375 21.596717 120.192090 21.632063 120.184799 21.656163 120.165235 21.679961 120.149744 21.705690 120.134762 21.730942 120.123379 21.752388 120.109907 21.780035 120.094402 21.804802 120.085060 21.825300 120.052553 21.865021 120.029849 21.891173 120.016373 21.914988 120.010561 21.940759 120.005788 21.964147 119.997467 21.981778 119.980907 22.004710 119.970496 22.027105 119.965211 22.049054 119.965027 22.074380 119.971010 22.097834 119.971893 22.117433 119.966085 22.140334 119.964947 22.155619 119.965331 22.173302 119.965145 22.198628 119.963413 22.224900 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>6.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.511216167759462" binWidth="0.1">
+      <ns0:occurRates>0.004327123399541409</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+    <ns0:simpleFaultSource id="38" name="Southwest Offshore Structure C" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.002124 22.154681 120.002575 22.181565 119.991403 22.219128 119.990488 22.257352 119.990321 22.280647 120.005490 22.313893 120.014964 22.336052 120.020567 22.361174 120.029383 22.386315 120.041382 22.416253 120.046338 22.443162 120.048143 22.461093 120.063502 22.470740 120.082127 22.492351 120.083359 22.492740 120.097615 22.514803 120.106719 22.538747 120.128186 22.560846 120.153671 22.600167 120.167851 22.638471 120.180442 22.679695 120.213109 22.730513 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>7.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.2658854682066565" binWidth="0.1">
+      <ns0:occurRates>0.004443778314908541</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="39" name="Southwest Offshore Structure D" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.128762 22.158764 120.127633 22.175484 120.123917 22.195536 120.120186 22.217880 120.113442 22.229313 120.105145 22.242648 120.099911 22.258389 120.092127 22.271249 120.087920 22.286517 120.087796 22.305632 120.090800 22.317595 120.093792 22.331470 120.091153 22.342447 120.091567 22.357741 120.099169 22.374031 120.112391 22.395609 120.125129 22.413073 120.125129 22.413073 120.130398 22.433530 120.131069 22.449662 120.138159 22.487762 120.145756 22.506798 120.159906 22.526943 120.172920 22.544214 120.182831 22.564693 120.200047 22.590585 120.220738 22.617567 120.236072 22.637100 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>30.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>7.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.701935372133421" binWidth="0.1">
+      <ns0:occurRates>0.000421</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="40" name="Southwest Offshore Structure E" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.146980 21.771761 120.139729 21.786539 120.127295 21.811803 120.114366 21.833718 120.106593 21.848969 120.102390 21.866150 120.093057 21.884737 120.088888 21.896184 120.085194 21.913368 120.078856 21.943201 120.079699 21.971401 120.081638 21.988617 120.071797 22.004809 120.062513 22.013837 120.054718 22.030040 120.053604 22.043414 120.050929 22.060125 120.054935 22.074485 120.058898 22.095439 120.062364 22.114096 120.063273 22.131783 120.069359 22.142331 120.072355 22.154773 120.074323 22.167687 120.072136 22.188224 120.073565 22.204958 120.077098 22.214058 120.092439 22.222746 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>35.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>7.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.245076993864746" binWidth="0.1">
+      <ns0:occurRates>0.002626253985945589</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="41" name="Southwest Offshore Structure F-1" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.222220 21.766684 120.200520 21.804862 120.180940 21.828183 120.147382 21.876760 120.135927 21.908242 120.131686 21.932115 120.123253 21.970780 120.116901 22.003720 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>35.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>8.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.936743204153203" binWidth="0.1">
+      <ns0:occurRates>0.005136414163755307</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="42" name="Southwest Offshore Structure F-2" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.240262 21.388088 120.243932 21.418573 120.252123 21.438922 120.258386 21.462250 120.266527 21.493352 120.266416 21.515456 120.260556 21.538132 120.255359 21.555434 120.254002 21.570960 120.255200 21.586499 120.262166 21.598478 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>35.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>8.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.053420867343141" binWidth="0.1">
+      <ns0:occurRates>0.0055463316685535925</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="43" name="Southwest Offshore Structure F-3" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.184886 21.962821 120.170336 21.998112 120.156758 22.041054 120.153979 22.077360 120.155380 22.100306 120.155380 22.100306 120.155179 22.112986 120.155735 22.127325 120.158809 22.149444 120.163848 22.165001 120.172332 22.176903 120.172332 22.176903 120.173487 22.198713 120.175899 22.225009 120.174156 22.248835 120.169251 22.264341 120.163669 22.285817 120.162901 22.307019 120.162545 22.310071 120.164784 22.322268 120.170816 22.344521 120.183769 22.369675 120.200552 22.399866 120.225816 22.431529 120.248827 22.453859 120.257982 22.472539 120.281009 22.494148 120.316381 22.517240 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>35.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>8.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.079845883514623" binWidth="0.1">
+      <ns0:occurRates>0.006671274159002819</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="44" name="Southwest Offshore Structure H-2" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.306179 21.498675 120.299740 21.520825 120.296415 21.537794 120.287998 21.561655 120.284087 21.577768 120.287843 21.593317 120.306051 21.605619 120.308698 21.640601 120.307251 21.675402 120.309162 21.703608 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.944039997798763" binWidth="0.1">
+      <ns0:occurRates>0.0035434069696403865</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="45" name="Southwest Offshore Structure H-3" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.224209 22.309684 120.236984 22.321692 120.246547 22.334281 120.255444 22.351645 120.264328 22.371996 120.268767 22.382769 120.283498 22.391198 120.298869 22.400226 120.309065 22.416996 120.316050 22.433751 120.329492 22.444560 120.346133 22.458965 120.358275 22.473948 120.367865 22.485336 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.70332965246055" binWidth="0.1">
+      <ns0:occurRates>0.006914337589086151</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="46" name="Southwest Offshore Structure H-4" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.457840 22.434431 120.458917 22.422613 120.459656 22.409197 120.455270 22.388414 120.448797 22.374654 120.434117 22.351919 120.419428 22.332378 120.402331 22.315063 120.385924 22.297749 120.372945 22.282523 120.359992 22.262344 120.353872 22.249540 120.349818 22.235466 120.346450 22.221682 120.341715 22.206966 120.337332 22.190334 120.334987 22.178503 120.331972 22.163154 120.325534 22.146514 120.320474 22.128920 120.316439 22.112289 120.300733 22.098804 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.630711711520102" binWidth="0.1">
+      <ns0:occurRates>0.004221259755334038</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="47" name="Southwest Offshore Structure J" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.323095 21.979065 120.321861 21.985969 120.319146 22.001152 120.317358 22.012661 120.315355 22.025552 120.313858 22.035181 120.314498 22.053899 120.314981 22.068042 120.318085 22.088963 120.322554 22.097885 120.325692 22.104151 120.328880 22.110514 120.335047 22.119558 120.339774 22.126489 120.344730 22.133757 120.350532 22.142263 120.356275 22.150749 120.360582 22.157114 120.366710 22.166166 120.371681 22.172849 120.376230 22.178662 120.381631 22.185562 120.386682 22.192192 120.391725 22.199013 120.396230 22.205106 120.400259 22.210555 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.630711711520102" binWidth="0.1">
+      <ns0:occurRates>0.003195097162877144</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="48" name="Fangliao Canyan Strucure Zone" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.356744 21.757380 120.370939 21.776490 120.386531 21.787981 120.397357 21.801360 120.402031 21.822338 120.404345 21.833402 120.409137 21.851644 120.415830 21.872034 120.424755 21.890538 120.432020 21.908948 120.444137 21.943188 120.450228 21.966822 120.458366 21.995171 120.463432 22.012275 120.466437 22.026530 120.467418 22.035328 120.466883 22.046573 120.466666 22.051147 120.468859 22.062324 120.472043 22.078541 120.474984 22.091701 120.477391 22.102473 120.479926 22.113813 120.485156 22.123276 120.495187 22.134876 120.511371 22.149374 120.520490 22.157248 120.533895 22.174364 120.543068 22.184840 120.551387 22.197075 120.556220 22.211136 120.559024 22.234671 120.560400 22.255039 120.562649 22.272194 120.566070 22.283190 120.566069 22.283458 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>80.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>9.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.801567207736184" binWidth="0.1">
+      <ns0:occurRates>0.0017353830333643803</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>45</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="49" name="Manila Upper Plate Splay Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.041662 19.092045 120.201734 19.266820 120.305840 19.408750 120.426100 19.596567 120.491932 19.711432 120.552033 19.881001 120.568328 19.979404 120.568333 20.101208 120.563185 20.188884 120.536258 20.305333 120.516973 20.396701 120.451279 20.648445 120.428109 20.775187 120.446795 20.877418 120.425269 21.020741 120.400259 21.069049 120.403688 21.127343 120.413125 21.196353 120.445321 21.275326 120.421918 21.391749 120.375623 21.477614 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>15.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.770306274604229" binWidth="0.1">
+      <ns0:occurRates>0.00024036304145809884</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="50" name="Tainan Basin Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>119.177226 22.288786 119.254601 22.351985 119.267218 22.359645 119.347892 22.411371 119.393746 22.445481 119.410271 22.449944 119.422565 22.453648 119.445529 22.468563 119.451598 22.477580 119.459591 22.486973 119.498151 22.522813 119.573095 22.594090 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>7.5</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.648373326498895" binWidth="0.1">
+      <ns0:occurRates>0.001155512721318432</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>-90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="51" name="Outer Hsinchu Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.789510 24.754280 120.796401 24.763272 120.805189 24.765004 120.810419 24.766730 120.816899 24.771898 120.827571 24.774013 120.841386 24.774028 120.858338 24.776530 120.872359 24.779600 120.888893 24.782862 120.901661 24.783635 120.913593 24.783834 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>45.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>10.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.3827638896942975" binWidth="0.1">
+      <ns0:occurRates>0.000214</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="52" name="Toufen Structure" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.706928 24.600227 120.705333 24.605407 120.704797 24.609022 120.704792 24.611433 120.705971 24.614690 120.707412 24.618792 120.708460 24.621687 120.709904 24.624703 120.712666 24.627843 120.715693 24.630621 120.718590 24.632314 120.720696 24.634006 120.721880 24.635575 120.724773 24.639317 120.727666 24.643059 120.731088 24.646320 120.734643 24.649340 120.737934 24.652360 120.742149 24.655139 120.747288 24.657800 120.752690 24.660823 120.754509 24.661850 120.757274 24.664145 120.761092 24.668491 120.765041 24.672716 120.768201 24.675855 120.770440 24.678029 120.772943 24.679961 120.775447 24.681411 120.779139 24.682743 120.782831 24.684195 120.786918 24.685768 120.790082 24.687219 120.793773 24.689273 120.797197 24.691212 120.800460 24.692573 120.803872 24.694001 120.808695 24.694347 120.814187 24.694625 120.818417 24.695376 120.822423 24.696262 120.826133 24.697419 120.830435 24.699119 120.833625 24.700547 120.836147 24.701770 120.839292 24.703469 120.841591 24.704285 120.844412 24.704627 120.849904 24.704836 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>40.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>6.0</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="6.376728897863927" binWidth="0.1">
+      <ns0:occurRates>0.00511325494658832</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>90</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="53" name="Northern Binhai fault" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>120.368240 26.021359 120.363787 26.014684 120.360088 26.009139 120.355714 26.002579 120.351631 25.996455 120.347623 25.990444 120.343335 25.984012 120.339348 25.978031 120.335277 25.971921 120.330610 25.964919 120.325815 25.957722 120.319238 25.947849 120.312147 25.937203 120.305858 25.927759 120.300512 25.919729 120.294289 25.910381 120.286373 25.898487 120.281052 25.890491 120.276264 25.883294 120.271197 25.875677 120.265218 25.866688 120.258367 25.856384 120.251551 25.846134 120.244992 25.836266 120.239532 25.828050 120.233894 25.819566 120.228109 25.810858 120.221159 25.800396 120.215464 25.791821 120.209993 25.783581 120.202021 25.771574 120.196587 25.763388 120.191984 25.756452 120.188822 25.751688 120.185504 25.746686 120.182329 25.741901 120.178672 25.736389 120.175268 25.731257 120.172000 25.726330 120.168645 25.721272 120.165737 25.716887 120.161665 25.710745 120.159077 25.706841 120.156336 25.702707 120.153249 25.698050 120.149718 25.692723 120.146589 25.688002 120.143570 25.683447 120.138977 25.676515 120.135724 25.671607 120.132542 25.666803 120.128759 25.661093 120.125145 25.655636 120.121201 25.649681 120.117098 25.643485 120.113737 25.638409 120.109904 25.632621 120.105581 25.626090 120.101663 25.620171 120.096938 25.613031 120.092805 25.606785 120.089333 25.601539 120.085860 25.596289 120.080597 25.588333 120.074927 25.579761 120.067869 25.569089 120.063963 25.563180 120.058949 25.555596 120.054304 25.548569 120.048818 25.540269 120.044533 25.533785 120.038021 25.523929 120.032648 25.515795 120.027201 25.507548 120.023549 25.502020 120.017134 25.492304 120.012220 25.484861 120.007623 25.477898 120.001349 25.468392 119.996658 25.461284 119.991362 25.453257 119.986652 25.446117 119.981692 25.438599 119.978337 25.434022 119.971738 25.426134 119.965634 25.418837 119.958497 25.410304 119.952974 25.403699 119.946765 25.396274 119.940882 25.389236 119.934804 25.381966 119.928202 25.374066 119.921333 25.365846 119.909120 25.351226 119.894316 25.333500 119.881088 25.317655 119.865731 25.299253 119.849540 25.279844 119.832576 25.259501 119.819065 25.243730 119.803836 25.226740 119.789750 25.211021 119.778646 25.198625 119.765136 25.183876 119.748691 25.166146 119.733097 25.149328 119.717263 25.132244 119.700214 25.113842 119.685611 25.098075 119.661452 25.071978 119.641264 25.050160 119.610093 25.016452 119.579421 24.983259 119.549214 24.950547 119.527760 24.927300 119.454338 24.852066 119.384377 24.791676 119.278627 24.700224 119.197042 24.629532 119.113282 24.556831 119.037524 24.490967 118.975345 24.436832 118.911674 24.381327 118.903720 24.374387 118.898537 24.369865 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>20</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.807221870925295" binWidth="0.1">
+      <ns0:occurRates>0.0009161812569163839</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>135</ns0:rake>
+    </ns0:simpleFaultSource>
+	<ns0:simpleFaultSource id="54" name="Southern Binhai fault" tectonicRegion="Active Shallow Crust">
+      <ns0:simpleFaultGeometry>
+        <ns1:LineString>
+          <ns1:posList>118.898537 24.369865 118.877555 24.351553 118.841321 24.321149 118.814880 24.299300 118.766996 24.259702 118.717117 24.218414 118.680234 24.187856 118.629306 24.145627 118.574732 24.100326 118.517345 24.052638 118.456387 24.002376 118.358334 23.923669 118.274103 23.855938 118.222812 23.814639 118.169658 23.771798 118.110154 23.723787 118.040887 23.671333 117.981520 23.628087 117.895057 23.565017 117.809579 23.502565 117.758358 23.465094 117.691255 23.415950 117.628151 23.375305 117.527453 23.310346 117.442068 23.255171 117.352854 23.197431 117.290702 23.157150 117.226574 23.115541 </ns1:posList>
+        </ns1:LineString>
+        <ns0:dip>60.0</ns0:dip>
+        <ns0:upperSeismoDepth>0</ns0:upperSeismoDepth>
+        <ns0:lowerSeismoDepth>20</ns0:lowerSeismoDepth>
+      </ns0:simpleFaultGeometry>
+      <ns0:magScaleRel>WC1994</ns0:magScaleRel>
+      <ns0:ruptAspectRatio>2.00</ns0:ruptAspectRatio>
+      <ns0:incrementalMFD minMag="7.775241330971417" binWidth="0.1">
+      <ns0:occurRates>0.0008465675940887984</ns0:occurRates>
+      </ns0:incrementalMFD>
+      <ns0:rake>135</ns0:rake>
+    </ns0:simpleFaultSource>
+  </ns0:sourceModel>
+</ns0:nrml>

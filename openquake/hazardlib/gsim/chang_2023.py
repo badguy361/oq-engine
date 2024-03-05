@@ -22,42 +22,35 @@ import pandas as pd
 from scipy import interpolate
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable, add_alias
 from openquake.hazardlib import const
-import pickle
 from openquake.hazardlib.imt import PGA, PGV, SA
 import xgboost as xgb
+import warnings
 
 class Chang2023(GMPE):
-    import warnings
     warnings.filterwarnings('ignore')
     #: Supported tectonic region type is active shallow crust, see title!
     DEFINED_FOR_TECTONIC_REGION_TYPE = const.TRT.ACTIVE_SHALLOW_CRUST
 
     #: Supported intensity measure types are spectral acceleration, peak
-    #: ground velocity and peak ground acceleration, see tables 4
-    #: pages 1036
+    #: ground velocity and peak ground acceleration
     DEFINED_FOR_INTENSITY_MEASURE_TYPES = {PGA, PGV, SA}
 
     #: Supported intensity measure component is orientation-independent
-    #: average horizontal :attr:`~openquake.hazardlib.const.IMC.RotD50`,
-    #: see page 1025.
+    #: average horizontal :attr:`~openquake.hazardlib.const.IMC.RotD50`
     DEFINED_FOR_INTENSITY_MEASURE_COMPONENT = const.IMC.GEOMETRIC_MEAN
 
     #: Supported standard deviation types are inter-event, intra-event
-    #: and total, see paragraph "Equations for standard deviations", page
-    #: 1046.
+    #: and total
     DEFINED_FOR_STANDARD_DEVIATION_TYPES = {
         const.StdDev.TOTAL, const.StdDev.INTER_EVENT, const.StdDev.INTRA_EVENT}
 
-    #: Required site parameters are Vs30 and Z1.0, see table 2, page 1031
-    #: Unit of measure for Z1.0 is [m]
+    #: Required site parameters are Vs30 
     REQUIRES_SITES_PARAMETERS = {'vs30'}
 
-    #: Required rupture parameters are magnitude, rake, dip, ztor, and width
-    #: (see table 2, page 1031)
+    #: Required rupture parameters are magnitude, rake
     REQUIRES_RUPTURE_PARAMETERS = {'mag', 'rake'}
 
-    #: Required distance measures are Rrup, Rjb, Ry0 and Rx (see Table 2,
-    #: page 1031).
+    #: Required distance measures are Rrup
     REQUIRES_DISTANCES = {'rrup'}
 
     #: Reference rock conditions as defined at page
@@ -66,13 +59,13 @@ class Chang2023(GMPE):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         ML_model = xgb.Booster()
-        ML_model.load_model(f'/usr/src/oq-engine/openquake/hazardlib/gsim/XGB_PGA.json')
+        ML_model.load_model(f'/usr/src/oq-engine/openquake/hazardlib/gsim/chang_2023/XGB_PGA_test.json')
         self.ML_model = ML_model
-        Sta_ID_thread = pd.read_csv(f"/usr/src/oq-engine/openquake/hazardlib/gsim/Sta_ID_info.csv")
+        Sta_ID_thread = pd.read_csv(f"/usr/src/oq-engine/openquake/hazardlib/gsim/chang_2023/Sta_ID_info.csv")
         self.Sta_ID_thread = Sta_ID_thread
 
     def compute(self, ctx: np.recarray, imts, mean, sig, tau, phi):
-        point = [119.5635611,21.90093889] # standard
+        point = [119.5635611,21.90093889] # standard point
         for m, imt in enumerate(imts):
             # cal sta_id by distance
             sta_dist = self.Sta_ID_thread['STA_DIST'].values.tolist()
@@ -80,6 +73,8 @@ class Chang2023(GMPE):
             sta_id = np.searchsorted(sta_dist, new_number)
 
             predict = self.ML_model.predict(xgb.DMatrix(np.column_stack((np.log(ctx.vs30), ctx.mag, np.log(ctx.rrup), ctx.rake, sta_id))))
+            # print('vs30',ctx.vs30.mean(),'mag',ctx.mag.mean(),'rrup',ctx.rrup.mean(),'rake',ctx.rake.mean(),'sta_id',sta_id.mean())
+            # print("ans",predict.mean())
             mean[m] = np.log(np.exp(predict)/980)
             sig[m], tau[m], phi[m] = 0.35,0.12,0.34
         print(ctx.dtype.names)

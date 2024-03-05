@@ -90,6 +90,7 @@ class Lin2011foot(GMPE):
         idx_rock = ctx.vs30 >= self.ROCK_VS30
         idx_soil = ctx.vs30 < self.ROCK_VS30
 
+        print("---------------------------------")
         for m, imt in enumerate(imts):
 
             if idx_rock.any():

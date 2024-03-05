@@ -111,6 +111,7 @@ class Lin2009(GMPE):
         <.base.GroundShakingIntensityModel.compute>`
         for spec of input and result values.
         """
+
         for m, imt in enumerate(imts):
             C = self.COEFFS[imt]
             mean[m] = (
@@ -119,15 +120,15 @@ class Lin2009(GMPE):
                 _get_style_of_faulting_term(C, ctx.rake) +
                 _get_site_response_term(C, ctx.vs30))
             sig[m] = C['sigma']
-        print(ctx.dtype.names)
-        name = []
-        thread_id = threading.get_ident()
-        ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])
-        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))        
-        name = [self.__class__.__name__]*len(ctx_tmp)
-        ctx_tmp = recfunctions.append_fields(ctx_tmp, 'gmm', name) # 跑多斷層要註解掉，不然會報錯
-        header = ','.join(ctx_tmp.dtype.names)
-        np.savetxt(f'/usr/src/oq-engine/demos/hazard/TEM PSHA2020/{self.__class__.__name__}_S04_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
+        # print(ctx.dtype.names)
+        # name = []
+        # thread_id = threading.get_ident()
+        # ctx_tmp = recfunctions.drop_fields(ctx, ['probs_occur'])
+        # ctx_tmp = recfunctions.append_fields(ctx_tmp, 'mean', np.exp(mean[0]))        
+        # name = [self.__class__.__name__]*len(ctx_tmp)
+        # ctx_tmp = recfunctions.append_fields([ctx_tmp], 'gmm', name) # 跑多斷層要註解掉，不然會報錯
+        # header = ','.join(ctx_tmp.dtype.names)
+        # np.savetxt(f'/usr/src/oq-engine/demos/hazard/3/{self.__class__.__name__}_{thread_id}.csv', ctx_tmp, delimiter=',',header=header, fmt='%s')
 
     #: Coefficient table for rock sites, see table 3 page 227.
     COEFFS = CoeffsTable(sa_damping=5.0, table="""\
